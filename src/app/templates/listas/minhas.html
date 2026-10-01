@@ -1,0 +1,16 @@
+{% extends "base.html" %}
+{% block title %}Minhas listas — GameLog{% endblock %}
+{% block content %}
+<h1>Minhas listas</h1>
+<form method="post" class="panel">
+  <input type="hidden" name="csrf_token" value="{{ csrf_token() }}">
+  <label for="name">Nova lista</label><input id="name" name="name" maxlength="80" value="{{ form.get('name', '') }}" required>
+  {% if errors.name %}<div class="err">{{ errors.name }}</div>{% endif %}
+  <label for="description">Descrição (opcional)</label><input id="description" name="description" maxlength="500" value="{{ form.get('description', '') }}">
+  <label for="visibility">Visibilidade</label>
+  <select id="visibility" name="visibility"><option value="publica">Pública</option><option value="privada">Privada</option></select>
+  <p><button>Criar lista</button></p>
+</form>
+{% for l in lists %}<div class="panel"><a href="/listas/{{ l.id }}"><strong>{{ l.name }}</strong></a> {% if not l.public %}<span class="tag">privada</span>{% endif %} <span class="mut">{{ l.items | length }} jogos</span></div>
+{% else %}<p class="mut">Você ainda não criou listas.</p>{% endfor %}
+{% endblock %}

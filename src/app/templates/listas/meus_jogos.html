@@ -1,0 +1,16 @@
+{% extends "base.html" %}
+{% from "_macros.html" import pager %}
+{% block title %}Meus jogos — GameLog{% endblock %}
+{% block content %}
+<h1>Meus jogos</h1>
+<p><a class="tag" href="/meus-jogos">Todos</a>{% for k, v in statuses.items() %}<a class="tag" href="/meus-jogos?status={{ k }}">{{ v }} ({{ counts[k] }})</a>{% endfor %}</p>
+{% set ns = namespace(cur=None) %}
+{% for s in page.items %}
+  {% if ns.cur != s.value %}{% set ns.cur = s.value %}<h2>{{ statuses[s.value] }}</h2>{% endif %}
+  <div class="panel">
+    {% if s.game.removed_at %}<strong>{{ s.game.title }}</strong> <span class="tag">removido do catálogo</span>
+    {% else %}<a href="/jogos/{{ s.game.slug }}"><strong>{{ s.game.title }}</strong></a>{% endif %}
+  </div>
+{% else %}<p class="mut">Nada por aqui ainda. <a href="/buscar">Explore o catálogo</a>.</p>{% endfor %}
+{{ pager(page) }}
+{% endblock %}

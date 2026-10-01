@@ -1,0 +1,31 @@
+{% extends "base.html" %}
+{% from "_macros.html" import game_card %}
+{% block title %}{{ gl.name }} — GameLog{% endblock %}
+{% block content %}
+<h1>{{ gl.name }} {% if not gl.public %}<span class="tag">privada</span>{% endif %}</h1>
+<p class="mut">por <a href="/u/{{ gl.user.username }}">@{{ gl.user.username }}</a> · {{ items | length }} jogos</p>
+{% if gl.description %}<p>{{ gl.description }}</p>{% endif %}
+{% if own %}
+<details class="panel"><summary>Editar lista</summary>
+  <form method="post" action="/listas/{{ gl.id }}/editar">
+    <input type="hidden" name="csrf_token" value="{{ csrf_token() }}">
+    <label for="name">Nome</label><input id="name" name="name" maxlength="80" value="{{ gl.name }}" required>
+    <label for="description">Descrição</label><input id="description" name="description" value="{{ gl.description }}">
+    <label for="visibility">Visibilidade</label>
+    <select id="visibility" name="visibility"><option value="publica">Pública</option><option value="privada" {{ 'selected' if not gl.public }}>Privada</option></select>
+    <p><button>Salvar</button></p>
+  </form>
+  <form method="post" action="/listas/{{ gl.id }}/apagar"><input type="hidden" name="csrf_token" value="{{ csrf_token() }}"><button class="danger">Apagar lista</button></form>
+</details>
+{% endif %}
+{% for it in items %}
+<div class="panel" style="display:flex;gap:12px;align-items:center;flex-wrap:wrap">
+  <span class="mut">{{ loop.index }}.</span>
+  {% if it.game.removed_at %}<strong>{{ it.game.title }}</strong> <span class="tag">removido do catálogo</span>
+  {% else %}<a href="/jogos/{{ it.game.slug }}"><strong>{{ it.game.title }}</strong></a>{% endif %}
+  {% if own %}<span style="margin-left:auto">
+    {% for d, label in (('up', '↑'), ('down', '↓')) %}<form class="inline" method="post" action="/listas/{{ gl.id }}/jogos/{{ it.game_id }}/mover"><input type="hidden" name="csrf_token" value="{{ csrf_token() }}"><input type="hidden" name="dir" value="{{ d }}"><button class="ghost" aria-label="Mover {{ d }}">{{ label }}</button></form> {% endfor %}
+    <form class="inline" method="post" action="/listas/{{ gl.id }}/jogos/{{ it.game_id }}/remover"><input type="hidden" name="csrf_token" value="{{ csrf_token() }}"><button class="ghost">Remover</button></form></span>{% endif %}
+</div>
+{% else %}<p class="mut">Lista vazia.</p>{% endfor %}
+{% endblock %}
