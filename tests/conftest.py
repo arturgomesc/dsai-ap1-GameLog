@@ -44,3 +44,20 @@ def make_user(app, username="ana", email=None, password="senha1234", role="jogad
 
 def login(client, username="ana", password="senha1234"):
     return client.post("/entrar", data={"email": f"{username}@ex.com", "password": password})
+
+
+def make_game(app, title="Jogo Teste", genre="Ação", platform="PC", dev="Dev Um", year=2020):
+    from datetime import date
+
+    from app.models import Developer, Game, Genre, Platform
+    from app.util import slugify
+
+    with app.app_context():
+        g = Genre.query.filter_by(name=genre).first() or Genre(name=genre, slug=slugify(genre))
+        p = Platform.query.filter_by(name=platform).first() or Platform(name=platform, slug=slugify(platform))
+        d = Developer.query.filter_by(name=dev).first() or Developer(name=dev, slug=slugify(dev))
+        game = Game(title=title, slug=slugify(title), synopsis="Sinopse.", release_date=date(year, 5, 1),
+                    developer=d, genres=[g], platforms=[p])
+        db.session.add(game)
+        db.session.commit()
+        return game.slug
