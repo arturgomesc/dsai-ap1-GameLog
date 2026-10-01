@@ -1,0 +1,17 @@
+{% extends "base.html" %}
+{% block title %}Editar perfil — GameLog{% endblock %}
+{% block content %}
+<section class="panel" style="max-width:480px;margin:0 auto">
+<h1>Editar perfil</h1>
+<form method="post">
+  <input type="hidden" name="csrf_token" value="{{ csrf_token() }}">
+  <label for="display_name">Nome de exibição</label>
+  <input id="display_name" name="display_name" value="{{ form.get('display_name', '') }}" required>
+  {% if errors.display_name %}<div class="err">{{ errors.display_name }}</div>{% endif %}
+  <label for="bio">Bio (até 280)</label>
+  <textarea id="bio" name="bio">{{ form.get('bio', '') }}</textarea>
+  {% if errors.bio %}<div class="err">{{ errors.bio }}</div>{% endif %}
+  <p><button>Salvar</button> <a href="/u/{{ u.username }}">Cancelar</a></p>
+</form>
+</section>
+{% endblock %}

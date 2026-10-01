@@ -26,6 +26,7 @@ def create_app(config=None):
             if not token or token != request.form.get("csrf_token"):
                 abort(400, "Token CSRF inválido")
 
+    app.jinja_env.globals["avatar_style"] = avatar_style
     app.jinja_env.filters["dictupdate"] = lambda d, u: {**d, **u}
 
     @app.context_processor
@@ -34,7 +35,7 @@ def create_app(config=None):
             session.setdefault("csrf", secrets.token_hex(16))
             return session["csrf"]
 
-        return {"me": current_user(), "csrf_token": csrf_token, "avatar_style": avatar_style}
+        return {"me": current_user(), "csrf_token": csrf_token}
 
     for code, msg in {400: "Requisição inválida", 403: "Acesso negado", 404: "Página não encontrada"}.items():
         app.register_error_handler(

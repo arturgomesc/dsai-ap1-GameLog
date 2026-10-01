@@ -1,0 +1,38 @@
+{% extends "base.html" %}
+{% from "_macros.html" import avatar %}
+{% block title %}{{ u.display_name }} (@{{ u.username }}) — GameLog{% endblock %}
+{% block content %}
+<section class="panel">
+  <div style="display:flex;gap:16px;align-items:center;flex-wrap:wrap">
+    {{ avatar(u, 'big') }}
+    <div style="flex:1">
+      <h1 style="margin:0">{{ u.display_name }}</h1>
+      <div class="mut">@{{ u.username }} · no GameLog desde {{ u.created_at.strftime('%d/%m/%Y') }}</div>
+    </div>
+    {% if own %}<a class="btn ghost" href="/u/{{ u.username }}/editar">Editar perfil</a>
+    {% elif me %}
+      <form method="post" action="/u/{{ u.username }}/{{ 'deixar-de-seguir' if following else 'seguir' }}">
+        <input type="hidden" name="csrf_token" value="{{ csrf_token() }}">
+        <button class="{{ 'ghost' if following }}">{{ 'Seguindo' if following else 'Seguir' }}</button>
+      </form>
+    {% else %}<a class="btn" href="/entrar?next=/u/{{ u.username }}">Seguir</a>{% endif %}
+  </div>
+  {% if u.bio %}<p>{{ u.bio }}</p>{% endif %}
+  <p>
+    <strong>{{ stats.avaliacoes }}</strong> avaliações ·
+    <strong>{{ stats.listas }}</strong> listas ·
+    <a href="/u/{{ u.username }}/seguidores"><strong>{{ stats.seguidores }}</strong> seguidores</a> ·
+    <a href="/u/{{ u.username }}/seguindo"><strong>{{ stats.seguindo }}</strong> seguindo</a>
+  </p>
+</section>
+<div class="row">
+  <section class="panel"><h2>Avaliações recentes</h2>
+    {% for r in reviews %}<p><a href="/jogos/{{ r.game.slug }}">{{ r.game.title }}</a> — ★ {{ r.score }}/10</p>
+    {% else %}<p class="mut">Nenhuma avaliação ainda.</p>{% endfor %}
+  </section>
+  <section class="panel"><h2>Listas</h2>
+    {% for l in lists %}<p><a href="/listas/{{ l.id }}">{{ l.name }}</a>{% if not l.public %} <span class="tag">privada</span>{% endif %}</p>
+    {% else %}<p class="mut">Nenhuma lista.</p>{% endfor %}
+  </section>
+</div>
+{% endblock %}

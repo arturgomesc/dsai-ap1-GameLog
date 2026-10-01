@@ -31,6 +31,7 @@ class User(db.Model):
     display_name = db.Column(db.String(60), nullable=False)
     bio = db.Column(db.String(280), default="", nullable=False)
     role = db.Column(db.String(10), default="jogador", nullable=False)
+    session_version = db.Column(db.Integer, default=0, nullable=False)
     created_at = db.Column(db.DateTime, default=now, nullable=False)
 
     @property

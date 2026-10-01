@@ -37,7 +37,9 @@ def paginate(query, page, per_page=PER_PAGE):
 def current_user():
     if "user" not in g:
         uid = session.get("uid")
-        g.user = db.session.get(User, uid) if uid else None
+        u = db.session.get(User, uid) if uid else None
+        # logout incrementa session_version e invalida cookies antigos no servidor (CAD-05)
+        g.user = u if u and u.session_version == session.get("sv") else None
     return g.user
 
 
