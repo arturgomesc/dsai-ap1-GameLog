@@ -10,6 +10,10 @@ Desenvolvido com **Spec-Driven Development**: cada parte tem uma spec datada em 
 
 ## Como rodar
 
+Atalho: `./dev.sh` (cria venv, instala, faz seed e sobe em http://127.0.0.1:5000; admin `admin@gamelog.local` / `admin12345`, só local). `./dev.sh test` roda os testes; `./dev.sh reset` recria o banco.
+
+Manual:
+
 ```bash
 python -m venv .venv && . .venv/bin/activate
 pip install -r requirements.txt
