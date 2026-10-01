@@ -1,0 +1,9 @@
+{% extends "base.html" %}
+{% from "_macros.html" import game_card, pager %}
+{% block title %}{{ obj.name }} — GameLog{% endblock %}
+{% block content %}
+<h1>{{ {'genres': 'Gênero', 'platforms': 'Plataforma', 'developer': 'Desenvolvedora'}[kind] }}: {{ obj.name }}</h1>
+<p class="mut">{{ page.total }} jogos</p>
+<div class="grid">{% for g, avg in page.items %}{{ game_card(g, avg) }}{% else %}<p class="mut">Nenhum jogo.</p>{% endfor %}</div>
+{{ pager(page) }}
+{% endblock %}

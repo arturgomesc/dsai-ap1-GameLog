@@ -1,0 +1,15 @@
+{% extends "base.html" %}
+{% from "_macros.html" import game_card %}
+{% block title %}GameLog — descubra, avalie e liste jogos{% endblock %}
+{% block content %}
+<section class="panel center">
+  <h1>Seu histórico de jogos, num só lugar</h1>
+  <p class="mut">{{ total }} jogos no catálogo. Avalie, monte listas e siga outros jogadores.</p>
+  <form action="/buscar" style="max-width:480px;margin:auto"><input type="search" name="q" placeholder="Buscar por título, gênero ou desenvolvedora…"></form>
+  <p>{% for g in genres %}<a class="tag" href="/generos/{{ g.slug }}">{{ g.name }}</a>{% endfor %}</p>
+</section>
+<h2>Em destaque</h2>
+<div class="grid">{% for g, avg in destaques %}{{ game_card(g, avg) }}{% else %}<p class="mut">Nenhum jogo avaliado ainda.</p>{% endfor %}</div>
+<h2>Lançamentos recentes</h2>
+<div class="grid">{% for g, avg in recentes %}{{ game_card(g, avg) }}{% endfor %}</div>
+{% endblock %}
