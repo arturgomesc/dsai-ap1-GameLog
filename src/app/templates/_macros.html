@@ -1,0 +1,23 @@
+{% macro pager(page, endpoint=None) %}
+{% if page.pages > 1 %}
+<nav class="pager" aria-label="Paginação">
+  {% set args = request.args.to_dict() %}
+  {% if page.has_prev %}<a href="{{ request.path }}?{{ (args | dictupdate({'page': page.page - 1})) | urlencode }}">← Anterior</a>{% endif %}
+  <span>Página {{ page.page }} de {{ page.pages }}</span>
+  {% if page.has_next %}<a href="{{ request.path }}?{{ (args | dictupdate({'page': page.page + 1})) | urlencode }}">Próxima →</a>{% endif %}
+</nav>
+{% endif %}
+{% endmacro %}
+
+{% macro game_card(g, avg=None) %}
+<a class="card" href="/jogos/{{ g.slug }}">
+  <img src="/capa/{{ g.slug }}.svg" alt="Capa de {{ g.title }}" loading="lazy">
+  <strong>{{ g.title }}</strong>
+  <small>{{ g.release_date.year }} · {{ g.developer.name }}</small>
+  {% if avg %}<span class="score">★ {{ '%.1f' | format(avg) }}</span>{% endif %}
+</a>
+{% endmacro %}
+
+{% macro avatar(u, size='') %}
+<span class="avatar {{ size }}" style="background:{{ avatar_style(u.username) }}">{{ u.display_name[:2] | upper }}</span>
+{% endmacro %}

@@ -1,0 +1,42 @@
+<!doctype html>
+<html lang="pt-br">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>{% block title %}GameLog{% endblock %}</title>
+<meta name="description" content="{% block description %}Catálogo e avaliação de jogos: descubra, avalie, liste e siga jogadores.{% endblock %}">
+<meta property="og:title" content="{{ self.title() }}">
+<meta property="og:description" content="{{ self.description() }}">
+<link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+<header class="top">
+  <a class="brand" href="/">🎮 GameLog</a>
+  <form class="search" action="/buscar" method="get">
+    <input type="search" name="q" value="{{ request.args.get('q', '') }}" placeholder="Buscar jogos…" aria-label="Buscar">
+  </form>
+  <nav>
+    <a href="/buscar">Explorar</a>
+    {% if me %}
+      <a href="/feed">Feed</a>
+      <a href="/meus-jogos">Meus jogos</a>
+      <a href="/listas">Listas</a>
+      <a href="/recomendacoes">Para você</a>
+      {% if me.is_admin %}<a href="/admin">Admin</a>{% endif %}
+      <a href="/u/{{ me.username }}">@{{ me.username }}</a>
+      <form method="post" action="/sair" class="inline"><input type="hidden" name="csrf_token" value="{{ csrf_token() }}"><button class="link">Sair</button></form>
+    {% else %}
+      <a href="/entrar">Entrar</a>
+      <a class="btn" href="/cadastro">Criar conta</a>
+    {% endif %}
+  </nav>
+</header>
+<main>
+  {% for cat, msg in get_flashed_messages(with_categories=true) %}
+    <div class="flash {{ cat }}" role="status">{{ msg }}</div>
+  {% endfor %}
+  {% block content %}{% endblock %}
+</main>
+<footer>GameLog — dados fictícios gerados por seed. Projeto AP1 DSAI 2026.</footer>
+</body>
+</html>
