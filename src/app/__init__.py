@@ -1,10 +1,16 @@
 import os
 import secrets
+from urllib.parse import urlencode
+
+import sqlite3
 
 from flask import Flask, abort, render_template, request, session
 
+from sqlalchemy import event
+from sqlalchemy.engine import Engine
+
 from .models import db
-from .util import avatar_style, current_user
+from .util import avatar_style, current_user, fold
 
 BLUEPRINTS = []  # preenchido por register_blueprints(); um módulo por spec
 
@@ -19,6 +25,11 @@ def create_app(config=None):
     app.config.update(config or {})
     db.init_app(app)
 
+    @event.listens_for(Engine, "connect")
+    def _sqlite_fold(conn, _):  # busca sem acento/caixa (BUS-01)
+        if isinstance(conn, sqlite3.Connection):
+            conn.create_function("fold", 1, fold, deterministic=True)
+
     @app.before_request
     def csrf_protect():
         if request.method == "POST" and app.config["CSRF"]:
@@ -27,6 +38,12 @@ def create_app(config=None):
                 abort(400, "Token CSRF inválido")
 
     app.jinja_env.globals["avatar_style"] = avatar_style
+
+    def page_url(n):  # preserva filtros multi-valor na paginação (BUS-05)
+        args = [(k, v) for k, v in request.args.items(multi=True) if k != "page"] + [("page", n)]
+        return f"{request.path}?{urlencode(args)}"
+
+    app.jinja_env.globals["page_url"] = page_url
     app.jinja_env.filters["dictupdate"] = lambda d, u: {**d, **u}
 
     @app.context_processor

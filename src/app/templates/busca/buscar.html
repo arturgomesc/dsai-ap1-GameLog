@@ -1,0 +1,27 @@
+{% extends "base.html" %}
+{% from "_macros.html" import game_card, pager %}
+{% block title %}Buscar jogos — GameLog{% endblock %}
+{% block content %}
+<h1>Explorar jogos</h1>
+<form method="get" class="panel">
+  <label for="q">Busca</label>
+  <input id="q" type="search" name="q" value="{{ request.args.get('q', '') }}" placeholder="Título, desenvolvedora ou gênero">
+  <div class="row">
+    <div><label>Gêneros</label>{% for g in genres %}<label style="display:inline-block;font-weight:400;margin-right:10px"><input type="checkbox" style="width:auto" name="genero" value="{{ g.slug }}" {{ 'checked' if g.slug in sel_genres }}> {{ g.name }}</label>{% endfor %}</div>
+    <div><label>Plataformas</label>{% for p in platforms %}<label style="display:inline-block;font-weight:400;margin-right:10px"><input type="checkbox" style="width:auto" name="plataforma" value="{{ p.slug }}" {{ 'checked' if p.slug in sel_plats }}> {{ p.name }}</label>{% endfor %}</div>
+  </div>
+  <div class="row">
+    <div><label for="ano_de">Ano de</label><input id="ano_de" name="ano_de" inputmode="numeric" value="{{ request.args.get('ano_de', '') }}"></div>
+    <div><label for="ano_ate">Ano até</label><input id="ano_ate" name="ano_ate" inputmode="numeric" value="{{ request.args.get('ano_ate', '') }}"></div>
+    <div><label for="nota_min">Nota mínima</label><input id="nota_min" name="nota_min" inputmode="decimal" value="{{ request.args.get('nota_min', '') }}"></div>
+    <div><label for="ordem">Ordenar por</label><select id="ordem" name="ordem">{% for k, v in sorts.items() %}<option value="{{ k }}" {{ 'selected' if k == sort }}>{{ v }}</option>{% endfor %}</select></div>
+  </div>
+  <p><button>Buscar</button> <a class="btn ghost" href="/buscar">Limpar filtros</a></p>
+</form>
+<p class="mut">{{ page.total }} resultado(s)</p>
+<div class="grid">{% for g, avg in page.items %}{{ game_card(g, avg) }}{% endfor %}</div>
+{% if not page.items %}
+<div class="panel center"><p>Nenhum jogo encontrado.</p>{% if filtered %}<a class="btn" href="/buscar">Limpar filtros</a>{% endif %}</div>
+{% endif %}
+{{ pager(page) }}
+{% endblock %}
