@@ -1,0 +1,83 @@
+{% extends "base.html" %}
+{% from "_macros.html" import game_card, pager, avatar %}
+{% block title %}{{ game.title }} — GameLog{% endblock %}
+{% block description %}{{ game.synopsis[:150] }}{% endblock %}
+{% macro review_card(r, likes) %}
+<article class="panel" id="av-{{ r.id }}">
+  {{ avatar(r.user) }} <a href="/u/{{ r.user.username }}"><strong>{{ r.user.display_name }}</strong></a>
+  <span class="score">★ {{ r.score }}/10</span>
+  <span class="mut">{{ r.created_at.strftime('%d/%m/%Y') }}{% if r.edited %} · editada{% endif %}</span>
+  {% if r.hidden %}<p class="err">Esta avaliação foi ocultada pela moderação e só você a vê.</p>{% endif %}
+  {% if r.spoiler and r.text %}<details class="spoiler"><summary>Contém spoiler — clique para ler</summary><p>{{ r.text }}</p></details>
+  {% elif r.text %}<p>{{ r.text }}</p>{% endif %}
+  <small class="mut">{{ likes }} curtida{{ 's' if likes != 1 }}</small>
+  {% if me and me.id != r.user_id and not r.hidden %}
+    <form class="inline" method="post" action="/avaliacoes/{{ r.id }}/{{ 'descurtir' if r.id in liked else 'curtir' }}">
+      <input type="hidden" name="csrf_token" value="{{ csrf_token() }}"><button class="link">{{ 'Descurtir' if r.id in liked else 'Curtir' }}</button></form>
+    <details style="display:inline"><summary style="display:inline;cursor:pointer" class="mut">Denunciar</summary>
+      <form method="post" action="/avaliacoes/{{ r.id }}/denunciar">
+        <input type="hidden" name="csrf_token" value="{{ csrf_token() }}">
+        <select name="reason" required>{% for k, v in reasons.items() %}<option value="{{ k }}">{{ v }}</option>{% endfor %}</select>
+        <input name="comment" maxlength="500" placeholder="Comentário (opcional)"><button class="ghost">Enviar denúncia</button>
+      </form></details>
+  {% elif not me %}<a class="mut" href="/entrar?next={{ request.path }}">Entre para curtir</a>{% endif %}
+</article>
+{% endmacro %}
+{% block content %}
+<section class="panel hero row">
+  <div style="flex:0 0 260px"><img class="cover" src="/capa/{{ game.slug }}.svg" alt="Capa de {{ game.title }}"></div>
+  <div style="flex:3">
+    <h1>{{ game.title }}</h1>
+    <p class="mut">Lançamento: {{ game.release_date.strftime('%d/%m/%Y') }} · por <a href="/desenvolvedoras/{{ game.developer.slug }}">{{ game.developer.name }}</a></p>
+    <p>{% for g in game.genres %}<a class="tag" href="/generos/{{ g.slug }}">{{ g.name }}</a>{% endfor %}
+       {% for p in game.platforms %}<a class="tag" href="/plataformas/{{ p.slug }}">{{ p.name }}</a>{% endfor %}</p>
+    <p>{{ game.synopsis }}</p>
+    <p style="font-size:1.4rem">
+      {% if stats.avg is not none %}<span class="score">★ {{ '%.1f' | format(stats.avg) }}</span> <span class="mut">({{ stats.total }} avaliaç{{ 'ões' if stats.total != 1 else 'ão' }})</span>
+      {% else %}<span class="mut">sem avaliações</span>{% endif %}
+    </p>
+    <div class="hist" aria-label="Histograma de notas">{% for n, c in stats.hist.items() %}<div title="Nota {{ n }}: {{ c }}" style="height:{{ (c * 100 / hist_max) | round | int }}%"></div>{% endfor %}</div>
+    <div class="mut" style="display:flex;justify-content:space-between"><span>0</span><span>10</span></div>
+  </div>
+</section>
+
+<div class="row">
+<section class="panel">
+  <h2>Meu registro</h2>
+  {% if me %}
+    <form method="post" action="/jogos/{{ game.slug }}/status" class="inline">
+      <input type="hidden" name="csrf_token" value="{{ csrf_token() }}">
+      <select name="status" onchange="this.form.submit()" aria-label="Status">
+        <option value="" {{ 'selected' if not status }}>— sem status —</option>
+        {% for k, v in statuses.items() %}<option value="{{ k }}" {{ 'selected' if k == status }}>{{ v }}</option>{% endfor %}
+      </select><noscript><button>Salvar status</button></noscript>
+    </form>
+    {% if my_lists %}
+    <form method="post" action="/jogos/{{ game.slug }}/adicionar-a-lista" style="margin-top:8px">
+      <input type="hidden" name="csrf_token" value="{{ csrf_token() }}">
+      <select name="list_id">{% for l in my_lists %}<option value="{{ l.id }}">{{ l.name }}</option>{% endfor %}</select> <button class="ghost">Adicionar à lista</button>
+    </form>{% else %}<p class="mut"><a href="/listas">Crie uma lista</a> para organizar seus jogos.</p>{% endif %}
+    <h3>{{ 'Editar minha avaliação' if mine else 'Avaliar' }}</h3>
+    <form method="post" action="/jogos/{{ game.slug }}/avaliar">
+      <input type="hidden" name="csrf_token" value="{{ csrf_token() }}">
+      <label for="score">Nota (0 a 10)</label><input id="score" name="score" type="number" min="0" max="10" required value="{{ mine.score if mine }}">
+      <label for="text">Resenha (opcional)</label><textarea id="text" name="text" maxlength="5000">{{ mine.text if mine }}</textarea>
+      <label style="font-weight:400"><input type="checkbox" name="spoiler" style="width:auto" {{ 'checked' if mine and mine.spoiler }}> Contém spoiler</label>
+      <p><button>Salvar avaliação</button></p>
+    </form>
+    {% if mine %}{{ review_card(mine, 0) }}
+      <form method="post" action="/avaliacoes/{{ mine.id }}/apagar"><input type="hidden" name="csrf_token" value="{{ csrf_token() }}"><button class="danger">Apagar minha avaliação</button></form>{% endif %}
+  {% else %}
+    <p><a class="btn" href="/entrar?next={{ request.path }}">Entre</a> ou <a href="/cadastro?next={{ request.path }}">crie uma conta</a> para registrar status, avaliar e listar este jogo.</p>
+  {% endif %}
+</section>
+</div>
+
+<h2>Resenhas</h2>
+<p class="mut">Ordenar: <a href="?ordem=curtidas">mais curtidas</a> · <a href="?ordem=recentes">mais recentes</a></p>
+{% for r, likes in page.items %}{{ review_card(r, likes) }}{% else %}<p class="mut">Ainda não há resenhas com texto.</p>{% endfor %}
+{{ pager(page) }}
+
+{% if related %}<h2>Jogos relacionados</h2>
+<div class="grid">{% for g, avg in related %}{{ game_card(g, avg) }}{% endfor %}</div>{% endif %}
+{% endblock %}
