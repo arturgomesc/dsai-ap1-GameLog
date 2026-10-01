@@ -3,7 +3,7 @@
 Catálogo de jogos com avaliações, listas/status (wishlist = "planejado"), feed social, recomendações e painel de moderação.
 Desenvolvido com **Spec-Driven Development**: cada parte tem uma spec datada em [`SPEC/`](SPEC/), commitada antes do código.
 
-- **URL pública:** _preencher após o deploy no Render_
+- **URL pública:** https://gamelog-r41f.onrender.com
 - **Equipe:** Artur ([@arturgomesc](https://github.com/arturgomesc)) — implementação · Fernanda Borges ([@fenalk](https://github.com/fenalk)) — specs
 - **Stack:** Python 3.12+, Flask 3, Flask-SQLAlchemy (SQLite), Jinja2, pytest, gunicorn. Sem JS de build, sem serviços externos.
 - **Ferramentas/modelos de IA:** Claude Code — Opus 5.5 (planejamento) e Sonnet 5.5 (implementação). Sessões brutas em [`prompts/sessoes/`](prompts/sessoes/).
