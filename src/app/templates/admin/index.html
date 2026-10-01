@@ -1,0 +1,13 @@
+{% extends "base.html" %}
+{% block title %}Administração — GameLog{% endblock %}
+{% block content %}
+<h1>Administração</h1>
+<div class="row">
+  <a class="panel" href="/admin/jogos"><strong>Jogos</strong><br><span class="mut">{{ games }} no total</span></a>
+  <a class="panel" href="/admin/denuncias"><strong>Denúncias pendentes</strong><br><span class="mut">{{ pending }}</span></a>
+  <a class="panel" href="/admin/generos"><strong>Gêneros</strong></a>
+  <a class="panel" href="/admin/plataformas"><strong>Plataformas</strong></a>
+  <a class="panel" href="/admin/desenvolvedoras"><strong>Desenvolvedoras</strong></a>
+  <a class="panel" href="/admin/auditoria"><strong>Auditoria</strong></a>
+</div>
+{% endblock %}

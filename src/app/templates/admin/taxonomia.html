@@ -1,0 +1,10 @@
+{% extends "base.html" %}
+{% block title %}{{ label }} — Admin{% endblock %}
+{% block content %}
+<h1>{{ label }}</h1>
+<form method="post" class="panel" style="display:flex;gap:8px"><input type="hidden" name="csrf_token" value="{{ csrf_token() }}"><input name="name" placeholder="Novo item" required><button>Adicionar</button></form>
+<table>{% for i in items %}<tr><td>
+  <form class="inline" method="post" action="/admin/{{ kind }}/{{ i.id }}/editar"><input type="hidden" name="csrf_token" value="{{ csrf_token() }}"><input name="name" value="{{ i.name }}" style="width:70%"> <button class="ghost">Renomear</button></form></td>
+  <td>{{ i.games | length }} jogos</td>
+  <td><form class="inline" method="post" action="/admin/{{ kind }}/{{ i.id }}/apagar"><input type="hidden" name="csrf_token" value="{{ csrf_token() }}"><button class="link">Apagar</button></form></td></tr>{% endfor %}</table>
+{% endblock %}

@@ -1,0 +1,22 @@
+{% extends "base.html" %}
+{% block title %}{{ 'Editar' if game else 'Novo' }} jogo — Admin{% endblock %}
+{% block content %}
+<h1>{{ 'Editar' if game else 'Novo' }} jogo</h1>
+<form method="post" class="panel">
+  <input type="hidden" name="csrf_token" value="{{ csrf_token() }}">
+  <label for="title">Título</label><input id="title" name="title" value="{{ form.get('title', '') }}">
+  {% if errors.title %}<div class="err">{{ errors.title }}</div>{% endif %}
+  <label for="synopsis">Sinopse</label><textarea id="synopsis" name="synopsis">{{ form.get('synopsis', '') }}</textarea>
+  {% if errors.synopsis %}<div class="err">{{ errors.synopsis }}</div>{% endif %}
+  <label for="release_date">Data de lançamento</label><input id="release_date" type="date" name="release_date" value="{{ form.get('release_date', '') }}">
+  {% if errors.release_date %}<div class="err">{{ errors.release_date }}</div>{% endif %}
+  <label for="developer_id">Desenvolvedora</label>
+  <select id="developer_id" name="developer_id"><option value="">—</option>{% for d in developers %}<option value="{{ d.id }}" {{ 'selected' if form.get('developer_id') | string == d.id | string }}>{{ d.name }}</option>{% endfor %}</select>
+  {% if errors.developer_id %}<div class="err">{{ errors.developer_id }}</div>{% endif %}
+  <label>Gêneros</label>{% for g in genres %}<label style="display:inline-block;font-weight:400;margin-right:10px"><input type="checkbox" style="width:auto" name="genre_ids" value="{{ g.id }}" {{ 'checked' if g.id | string in sel.genre_ids }}> {{ g.name }}</label>{% endfor %}
+  {% if errors.genre_ids %}<div class="err">{{ errors.genre_ids }}</div>{% endif %}
+  <label>Plataformas</label>{% for p in platforms %}<label style="display:inline-block;font-weight:400;margin-right:10px"><input type="checkbox" style="width:auto" name="platform_ids" value="{{ p.id }}" {{ 'checked' if p.id | string in sel.platform_ids }}> {{ p.name }}</label>{% endfor %}
+  {% if errors.platform_ids %}<div class="err">{{ errors.platform_ids }}</div>{% endif %}
+  <p><button>Salvar</button> <a href="/admin/jogos">Cancelar</a></p>
+</form>
+{% endblock %}

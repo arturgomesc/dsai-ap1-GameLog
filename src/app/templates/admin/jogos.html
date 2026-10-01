@@ -1,0 +1,14 @@
+{% extends "base.html" %}
+{% from "_macros.html" import pager %}
+{% block title %}Jogos — Admin{% endblock %}
+{% block content %}
+<h1>Jogos <a class="btn" href="/admin/jogos/novo">Novo jogo</a></h1>
+<form method="get"><input name="q" value="{{ request.args.get('q', '') }}" placeholder="Filtrar por título"></form>
+<table><tr><th>Título</th><th>Lançamento</th><th>Estado</th><th></th></tr>
+{% for g in page.items %}<tr>
+  <td>{{ g.title }}</td><td>{{ g.release_date.year }}</td><td>{{ 'removido' if g.removed_at else 'ativo' }}</td>
+  <td><a href="/admin/jogos/{{ g.id }}/editar">Editar</a>
+    <form class="inline" method="post" action="/admin/jogos/{{ g.id }}/{{ 'restaurar' if g.removed_at else 'remover' }}"><input type="hidden" name="csrf_token" value="{{ csrf_token() }}"><button class="link">{{ 'Restaurar' if g.removed_at else 'Remover' }}</button></form></td>
+</tr>{% endfor %}</table>
+{{ pager(page) }}
+{% endblock %}

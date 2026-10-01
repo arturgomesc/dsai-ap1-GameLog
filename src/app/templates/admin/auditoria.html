@@ -1,0 +1,9 @@
+{% extends "base.html" %}
+{% from "_macros.html" import pager %}
+{% block title %}Auditoria — Admin{% endblock %}
+{% block content %}
+<h1>Registro de auditoria</h1>
+<table><tr><th>Quando</th><th>Quem</th><th>Ação</th><th>Detalhe</th></tr>
+{% for a in page.items %}<tr><td>{{ a.created_at.strftime('%d/%m/%Y %H:%M') }}</td><td>@{{ a.admin.username }}</td><td>{{ a.action }}</td><td>{{ a.detail }}</td></tr>{% endfor %}</table>
+{{ pager(page) }}
+{% endblock %}

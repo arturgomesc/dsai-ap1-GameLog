@@ -1,0 +1,22 @@
+{% extends "base.html" %}
+{% from "_macros.html" import pager %}
+{% block title %}Denúncias — Admin{% endblock %}
+{% block content %}
+<h1>Denúncias</h1>
+<p>{% for s in ('pendente', 'ocultada', 'rejeitada', 'revertida') %}<a class="tag" href="?status={{ s }}">{{ s }}</a>{% endfor %}</p>
+{% for r in page.items %}
+<div class="panel">
+  <p><strong>{{ r.review.game.title }}</strong> — ★ {{ r.review.score }}/10 por <a href="/u/{{ r.review.user.username }}">@{{ r.review.user.username }}</a></p>
+  <p>“{{ r.review.text or '(sem texto)' }}”</p>
+  <p class="mut">Motivo: {{ r.reason }}{% if r.comment %} — {{ r.comment }}{% endif %} · denunciada por @{{ r.reporter.username }} em {{ r.created_at.strftime('%d/%m/%Y %H:%M') }}</p>
+  {% if r.decider %}<p class="mut">Decidida por @{{ r.decider.username }} em {{ r.decided_at.strftime('%d/%m/%Y %H:%M') }}</p>{% endif %}
+  {% if r.status == 'pendente' %}
+    <form class="inline" method="post" action="/admin/denuncias/{{ r.id }}/ocultar"><input type="hidden" name="csrf_token" value="{{ csrf_token() }}"><button class="danger">Ocultar avaliação</button></form>
+    <form class="inline" method="post" action="/admin/denuncias/{{ r.id }}/rejeitar"><input type="hidden" name="csrf_token" value="{{ csrf_token() }}"><button class="ghost">Rejeitar denúncia</button></form>
+  {% elif r.status == 'ocultada' %}
+    <form class="inline" method="post" action="/admin/avaliacoes/{{ r.review_id }}/reverter"><input type="hidden" name="csrf_token" value="{{ csrf_token() }}"><button class="ghost">Reverter ocultação</button></form>
+  {% endif %}
+</div>
+{% else %}<p class="mut">Nenhuma denúncia {{ status }}.</p>{% endfor %}
+{{ pager(page) }}
+{% endblock %}
