@@ -1,0 +1,9 @@
+{% extends "base.html" %}
+{% from "_macros.html" import pager, avatar %}
+{% block title %}{{ kind | capitalize }} de @{{ u.username }} — GameLog{% endblock %}
+{% block content %}
+<h1>{{ kind | capitalize }} de <a href="/u/{{ u.username }}">@{{ u.username }}</a></h1>
+{% for p in page.items %}<div class="panel">{{ avatar(p) }} <a href="/u/{{ p.username }}">{{ p.display_name }}</a> <span class="mut">@{{ p.username }}</span></div>
+{% else %}<p class="mut">Ninguém por aqui ainda.</p>{% endfor %}
+{{ pager(page) }}
+{% endblock %}
