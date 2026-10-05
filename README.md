@@ -49,14 +49,14 @@ Variáveis: `SECRET_KEY` (gerada), `ADMIN_EMAIL`, `ADMIN_PASSWORD`.
 ```
 $ cloc . --vcs=git --exclude-dir=node_modules,vendor,dist,build,prompts --exclude-lang=Markdown,JSON,YAML,CSV,Text,SVG --not-match-f='(lock|\.min\.)'
 Language        files   blank   comment   code
-Python             26     536        28   2218
+Python             29     574        33   2383
 HTML               23       5         0    486
 CSS                 1       0         0     42
-Bourne Shell        1       1         2     13
+Bourne Shell        1       1         2     14
 INI                 1       0         0      3
-SUM:               52     542        30   2762
+SUM:               55     580        35   2928
 ```
 
-**Nota sobre a meta de 100 mil linhas:** o escopo das 10 specs (≈85 critérios de aceitação) resulta em ~2,7 mil linhas de
+**Nota sobre a meta de 100 mil linhas:** o escopo das 11 specs (≈95 critérios de aceitação) resulta em ~2,9 mil linhas de
 código real. Preferimos entregar a aplicação completa e testada a inflar o número com código duplicado ou gerado;
 o valor medido está reportado acima sem ajuste.
