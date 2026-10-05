@@ -19,12 +19,12 @@ python -m venv .venv && . .venv/bin/activate
 pip install -r requirements.txt
 cd src
 export ADMIN_EMAIL=admin@example.com ADMIN_PASSWORD=<senha>   # ver .env.example
-flask --app app seed        # 300 jogos, 15 gêneros, 10 plataformas, 40 devs, 30 usuários (senha dos fictícios: senha1234)
+flask --app app seed        # 139 jogos reais (snapshot da Steam), 30 usuários fictícios com avaliações em ~30 jogos (senha: senha1234)
 flask --app app run
-cd .. && pytest             # 98 testes, um ou mais por critério de aceitação
+cd .. && pytest             # 103 testes, um ou mais por critério de aceitação
 ```
 
-Jogos reais: `flask --app app import-games [--fonte steam] [--limite 40] [--termo nome]` (API pública da Steam, sem chave). Para somar outra fonte (RAWG, IGDB), crie `src/app/fontes/<nome>.py` com `listar(limite, termo)` e registre em `FONTES`. Em banco local antigo, rode `./dev.sh reset` (o Game ganhou colunas).
+O catálogo vem de `src/app/dados/jogos.json` (gerado com `flask --app app export-games --termos "Nome 1;Nome 2" --saida src/app/dados/jogos.json`). Para somar mais jogos da Steam: `flask --app app import-games [--fonte steam] [--limite 40] [--termo nome]` (API pública da Steam, sem chave). Para somar outra fonte (RAWG, IGDB), crie `src/app/fontes/<nome>.py` com `listar(limite, termo)` e registre em `FONTES`. Em banco local antigo, rode `./dev.sh reset` (o Game ganhou colunas).
 
 Deploy: `render.yaml` (Render, plano gratuito; o seed reproduzível recria o banco a cada start).
 Variáveis: `SECRET_KEY` (gerada), `ADMIN_EMAIL`, `ADMIN_PASSWORD`.
@@ -43,20 +43,21 @@ Variáveis: `SECRET_KEY` (gerada), `ADMIN_EMAIL`, `ADMIN_PASSWORD`.
 | recomendacoes (REC-01..09) | `recomendacoes.py` | `tests/test_recomendacoes.py` |
 | painel-admin (ADM-01..10) | `admin.py` | `tests/test_admin.py` |
 | importacao-steam (IMP-01..09) | `fontes/`, `cli.py` | `tests/test_importacao.py` |
+| catalogo-real (CRE-01..09) | `seed.py`, `fontes/arquivo.py`, `dados/jogos.json` | `tests/test_catalogo_real.py` |
 
 ## cloc
 
 ```
 $ cloc . --vcs=git --exclude-dir=node_modules,vendor,dist,build,prompts --exclude-lang=Markdown,JSON,YAML,CSV,Text,SVG --not-match-f='(lock|\.min\.)'
 Language        files   blank   comment   code
-Python             29     574        33   2383
+Python             31     601        36   2494
 HTML               23       5         0    486
 CSS                 1       0         0     42
-Bourne Shell        1       1         2     14
+Bourne Shell        1       1         2     13
 INI                 1       0         0      3
-SUM:               55     580        35   2928
+SUM:               57     607        38   3038
 ```
 
-**Nota sobre a meta de 100 mil linhas:** o escopo das 11 specs (≈95 critérios de aceitação) resulta em ~2,9 mil linhas de
+**Nota sobre a meta de 100 mil linhas:** o escopo das 12 specs (≈105 critérios de aceitação) resulta em ~3 mil linhas de
 código real. Preferimos entregar a aplicação completa e testada a inflar o número com código duplicado ou gerado;
 o valor medido está reportado acima sem ajuste.
