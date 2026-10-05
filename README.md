@@ -44,11 +44,14 @@ Variáveis: `SECRET_KEY` (gerada), `ADMIN_EMAIL`, `ADMIN_PASSWORD`.
 ## cloc
 
 ```
-$ cloc src tests
-Python  26 files   code 2218
-HTML    23 files   code  486
-CSS      1 file    code   42
-SUM:                     2751  (+ ~540 blank, 28 comment)
+$ cloc . --vcs=git --exclude-dir=node_modules,vendor,dist,build,prompts --exclude-lang=Markdown,JSON,YAML,CSV,Text,SVG --not-match-f='(lock|\.min\.)'
+Language        files   blank   comment   code
+Python             26     536        28   2218
+HTML               23       5         0    486
+CSS                 1       0         0     42
+Bourne Shell        1       1         2     13
+INI                 1       0         0      3
+SUM:               52     542        30   2762
 ```
 
 **Nota sobre a meta de 100 mil linhas:** o escopo das 10 specs (≈85 critérios de aceitação) resulta em ~2,7 mil linhas de
