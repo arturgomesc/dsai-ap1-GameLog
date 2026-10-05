@@ -15,7 +15,7 @@ def with_avg(query):
 @bp.route("/")
 def home():
     q, sub = with_avg(visible_games())
-    destaques = q.filter(sub.c.n >= 3).order_by(sub.c.avg.desc(), Game.title).limit(12).all()
+    destaques = q.add_columns(sub.c.n).filter(sub.c.n >= 3).order_by(sub.c.avg.desc(), Game.title).limit(12).all()
     recentes = q.order_by(Game.release_date.desc(), Game.title).limit(6).all()
     return render_template("catalogo/home.html", destaques=destaques, recentes=recentes,
                            genres=Genre.query.order_by(Genre.name).all(), total=visible_games().count())

@@ -1,8 +1,8 @@
 from ..models import Developer, Game, Genre, Platform, db
 from ..util import slugify
-from . import steam
+from . import arquivo, steam
 
-FONTES = {"steam": steam}  # nova fonte: um módulo com listar(limite, termo) e uma linha aqui
+FONTES = {"steam": steam, "arquivo": arquivo}  # nova fonte: um módulo com listar(limite, termo) e uma linha aqui
 
 
 def _obter(model, nome):

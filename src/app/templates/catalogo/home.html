@@ -9,7 +9,7 @@
   <p>{% for g in genres %}<a class="tag" href="/generos/{{ g.slug }}">{{ g.name }}</a>{% endfor %}</p>
 </section>
 <h2>Em destaque</h2>
-<div class="grid">{% for g, avg in destaques %}{{ game_card(g, avg) }}{% else %}<p class="mut">Nenhum jogo avaliado ainda.</p>{% endfor %}</div>
+<div class="grid">{% for g, avg, n in destaques %}{{ game_card(g, avg, n) }}{% else %}<p class="mut">Nenhum jogo avaliado ainda.</p>{% endfor %}</div>
 <h2>Lançamentos recentes</h2>
 <div class="grid">{% for g, avg in recentes %}{{ game_card(g, avg) }}{% endfor %}</div>
 {% endblock %}

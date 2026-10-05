@@ -8,12 +8,12 @@
 {% endif %}
 {% endmacro %}
 
-{% macro game_card(g, avg=None) %}
+{% macro game_card(g, avg=None, n=None) %}
 <a class="card" href="/jogos/{{ g.slug }}">
   <img src="{{ g.cover }}" alt="Capa de {{ g.title }}" loading="lazy">
   <strong>{{ g.title }}</strong>
   <small>{{ g.release_date.year }} · {{ g.developer.name }}</small>
-  {% if avg %}<span class="score">★ {{ '%.1f' | format(avg) }}</span>{% endif %}
+  {% if avg %}<span class="score">★ {{ '%.1f' | format(avg) }}{% if n %} · {{ n }} avaliações{% endif %}</span>{% endif %}
 </a>
 {% endmacro %}
 

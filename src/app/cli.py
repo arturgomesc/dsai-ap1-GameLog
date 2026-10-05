@@ -31,7 +31,7 @@ def register(app):
         """Popula o banco com dados fictícios reproduzíveis."""
         from .seed import run
 
-        run(seed)
+        run(seed, real=True)
         click.echo("seed ok")
         email, pw = os.environ.get("ADMIN_EMAIL"), os.environ.get("ADMIN_PASSWORD")
         if email and pw and create_admin(email, pw):
@@ -56,3 +56,24 @@ def register(app):
             raise click.UsageError(f"fonte desconhecida; use uma de {sorted(FONTES)}")
         ok, ign, erro = importar(fonte, limite, termo)
         click.echo(f"importados={ok} ignorados={ign} falhas={erro}")
+
+    @app.cli.command("export-games")
+    @click.option("--termos", required=True, help="nomes separados por ;, um jogo por nome")
+    @click.option("--saida", required=True)
+    def export_games_cmd(termos, saida):
+        """Gera o snapshot de jogos reais (fonte `arquivo`) a partir da Steam."""
+        import json
+
+        from .fontes import steam
+
+        jogos, faltaram = {}, 0
+        for t in filter(None, (x.strip() for x in termos.split(";"))):
+            j = next((x for x in steam.listar(3, t) if "erro" not in x and x["release_date"]), None)
+            if j:
+                jogos[j["external_id"]] = {**j, "release_date": j["release_date"].isoformat()}
+            else:
+                faltaram += 1
+                click.echo(f"sem resultado: {t}")
+        with open(saida, "w", encoding="utf-8") as f:
+            json.dump(list(jogos.values()), f, ensure_ascii=False, indent=1)
+        click.echo(f"jogos={len(jogos)} sem_resultado={faltaram}")

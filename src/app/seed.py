@@ -1,4 +1,4 @@
-"""Seed reproduzível com dados 100% fictícios (CAT-03..CAT-06, GLOBAL-07)."""
+"""Seed reproduzível. `real=True` (comando seed): jogos do snapshot; `real=False`: jogos fictícios, só para testes (CRE-09)."""
 import random
 from datetime import date, datetime, timedelta
 
@@ -7,6 +7,7 @@ from werkzeug.security import generate_password_hash
 from .models import (
     Activity, Developer, Follow, Game, GameList, Genre, ListItem, Platform, Report, Review, Like, Status, User, db,
 )
+from .fontes import importar
 from .util import slugify
 
 GENRES = ["Ação", "Aventura", "RPG", "Estratégia", "Simulação", "Esportes", "Corrida", "Puzzle", "Plataforma",
@@ -37,10 +38,28 @@ BASE = datetime(2026, 9, 1, 12, 0)
 SEED_PASSWORD = "senha1234"
 
 
-def run(seed=42):
+REV_REAL = [
+    "Passei horas em {n} e não me arrependo.", "{n} tem seus problemas, mas a experiência vale a pena.",
+    "Esperava mais de {n}, apesar do visual impecável.", "Recomendo {n} para quem curte um bom desafio.",
+    "A trilha sonora de {n} é de outro nível.", "{n} começa devagar e depois não solta mais.",
+    "Gostei bastante, a ambientação é muito boa.", "Bom para jogar com calma no fim de semana.",
+]
+DESTAQUES = 30  # jogos reais que recebem avaliações (CRE-06)
+
+
+def run(seed=42, real=False):
     if Game.query.first():
         return  # idempotente: não duplica
     rng = random.Random(seed)
+    if real:
+        importar("arquivo", limite=10**6)
+        games = Game.query.order_by(Game.id).all()
+    else:
+        games = _jogos_ficticios(rng)
+    _atividade(rng, games, real)
+
+
+def _jogos_ficticios(rng):
     genres = [Genre(name=n, slug=slugify(n)) for n in GENRES]
     platforms = [Platform(name=n, slug=slugify(n)) for n in PLATFORMS]
     dev_names = sorted({f"{a} {b}" for a in DEV_A for b in DEV_B})
@@ -62,7 +81,10 @@ def run(seed=42):
             platforms=rng.sample(platforms, rng.randint(1, 4)),
         ))
     db.session.add_all(games)
+    return games
 
+
+def _atividade(rng, games, real):
     pw = generate_password_hash(SEED_PASSWORD)
     users = [User(username=f"jogador{i:02d}", username_lower=f"jogador{i:02d}", email=f"jogador{i:02d}@example.com",
                   password_hash=pw, display_name=f"Jogador {i:02d}", bio=rng.choice(["", "Fã de RPG.", "Platina é vida.", "Casual."]),
@@ -72,14 +94,23 @@ def run(seed=42):
 
     quality = {g.id: rng.gauss(6.5, 1.6) for g in games}
     reviews = []
+
+    def avaliar(u, g):
+        at = BASE - timedelta(hours=rng.randint(1, 24 * 60))
+        texto = (rng.choice(REV_REAL).format(n=g.title) if real else rng.choice(REV)) if rng.random() < .7 else ""
+        r = Review(user_id=u.id, game_id=g.id, score=max(0, min(10, round(rng.gauss(quality[g.id], 1.3)))),
+                   text=texto, spoiler=rng.random() < .05, created_at=at)
+        reviews.append(r)
+        db.session.add_all([r, Status(user_id=u.id, game_id=g.id, value="jogado", updated_at=at),
+                            Activity(user_id=u.id, kind="avaliou", game_id=g.id, created_at=at, review=r)])
+
+    if real:  # só alguns jogos recebem avaliações, 3 a 9 cada (CRE-06)
+        for g in rng.sample(games, min(DESTAQUES, len(games))):
+            for u in rng.sample(users, rng.randint(3, 9)):
+                avaliar(u, g)
     for u in users:
-        for g in rng.sample(games, rng.randint(8, 25)):
-            at = BASE - timedelta(hours=rng.randint(1, 24 * 60))
-            r = Review(user_id=u.id, game_id=g.id, score=max(0, min(10, round(rng.gauss(quality[g.id], 1.3)))),
-                       text=rng.choice(REV) if rng.random() < .7 else "", spoiler=rng.random() < .05, created_at=at)
-            reviews.append(r)
-            db.session.add_all([r, Status(user_id=u.id, game_id=g.id, value="jogado", updated_at=at),
-                                Activity(user_id=u.id, kind="avaliou", game_id=g.id, created_at=at, review=r)])
+        for g in [] if real else rng.sample(games, rng.randint(8, 25)):
+            avaliar(u, g)
         others = rng.sample(games, 8)
         for g, v in zip(others, ["planejado"] * 4 + ["jogando"] * 2 + ["abandonado"] * 2):
             if not Review.query.filter_by(user_id=u.id, game_id=g.id).first() and not any(
