@@ -21,8 +21,10 @@ cd src
 export ADMIN_EMAIL=admin@example.com ADMIN_PASSWORD=<senha>   # ver .env.example
 flask --app app seed        # 300 jogos, 15 gêneros, 10 plataformas, 40 devs, 30 usuários (senha dos fictícios: senha1234)
 flask --app app run
-cd .. && pytest             # 91 testes, um ou mais por critério de aceitação
+cd .. && pytest             # 98 testes, um ou mais por critério de aceitação
 ```
+
+Jogos reais: `flask --app app import-games [--fonte steam] [--limite 40] [--termo nome]` (API pública da Steam, sem chave). Para somar outra fonte (RAWG, IGDB), crie `src/app/fontes/<nome>.py` com `listar(limite, termo)` e registre em `FONTES`. Em banco local antigo, rode `./dev.sh reset` (o Game ganhou colunas).
 
 Deploy: `render.yaml` (Render, plano gratuito; o seed reproduzível recria o banco a cada start).
 Variáveis: `SECRET_KEY` (gerada), `ADMIN_EMAIL`, `ADMIN_PASSWORD`.
@@ -40,6 +42,7 @@ Variáveis: `SECRET_KEY` (gerada), `ADMIN_EMAIL`, `ADMIN_PASSWORD`.
 | social (SOC-01..10) | `social.py` | `tests/test_social.py` |
 | recomendacoes (REC-01..09) | `recomendacoes.py` | `tests/test_recomendacoes.py` |
 | painel-admin (ADM-01..10) | `admin.py` | `tests/test_admin.py` |
+| importacao-steam (IMP-01..09) | `fontes/`, `cli.py` | `tests/test_importacao.py` |
 
 ## cloc
 
