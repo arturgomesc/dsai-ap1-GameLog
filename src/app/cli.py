@@ -43,3 +43,16 @@ def register(app):
         if not (email and pw):
             raise click.UsageError("defina ADMIN_EMAIL e ADMIN_PASSWORD")
         click.echo("admin criado" if create_admin(email, pw) else "admin já existe")
+
+    @app.cli.command("import-games")
+    @click.option("--fonte", default="steam")
+    @click.option("--limite", default=40)
+    @click.option("--termo", default=None)
+    def import_games_cmd(fonte, limite, termo):
+        """Importa jogos reais de uma fonte externa (padrão: Steam, sem chave)."""
+        from .fontes import FONTES, importar
+
+        if fonte not in FONTES:
+            raise click.UsageError(f"fonte desconhecida; use uma de {sorted(FONTES)}")
+        ok, ign, erro = importar(fonte, limite, termo)
+        click.echo(f"importados={ok} ignorados={ign} falhas={erro}")

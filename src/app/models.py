@@ -64,6 +64,7 @@ class Developer(NamedMixin, db.Model):
 
 
 class Game(db.Model):
+    __table_args__ = (db.UniqueConstraint("source", "external_id"),)
     id = db.Column(db.Integer, primary_key=True)
     title = db.Column(db.String(150), nullable=False)
     slug = db.Column(db.String(170), unique=True, nullable=False)
@@ -71,9 +72,16 @@ class Game(db.Model):
     release_date = db.Column(db.Date, nullable=False)
     developer_id = db.Column(db.ForeignKey("developer.id"), nullable=False)
     removed_at = db.Column(db.DateTime, nullable=True)
+    source = db.Column(db.String(20), nullable=True)  # None = jogo fictício do seed
+    external_id = db.Column(db.String(40), nullable=True)
+    cover_url = db.Column(db.String(500), nullable=True)
     developer = db.relationship(Developer, backref="games")
     genres = db.relationship(Genre, secondary=game_genres, backref="games")
     platforms = db.relationship(Platform, secondary=game_platforms, backref="games")
+
+    @property
+    def cover(self):
+        return self.cover_url or f"/capa/{self.slug}.svg"
 
 
 class Status(db.Model):

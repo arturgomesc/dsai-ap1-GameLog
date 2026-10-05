@@ -25,7 +25,7 @@
 {% endmacro %}
 {% block content %}
 <section class="panel hero row">
-  <div style="flex:0 0 260px"><img class="cover" src="/capa/{{ game.slug }}.svg" alt="Capa de {{ game.title }}"></div>
+  <div style="flex:0 0 260px"><img class="cover" src="{{ game.cover }}" alt="Capa de {{ game.title }}"></div>
   <div style="flex:3">
     <h1>{{ game.title }}</h1>
     <p class="mut">Lançamento: {{ game.release_date.strftime('%d/%m/%Y') }} · por <a href="/desenvolvedoras/{{ game.developer.slug }}">{{ game.developer.name }}</a></p>

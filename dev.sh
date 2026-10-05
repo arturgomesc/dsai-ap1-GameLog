@@ -13,4 +13,5 @@ cd src
 [ "$1" = "reset" ] && rm -f instance/gamelog-dev.db
 
 ../.venv/bin/flask --app app seed
+../.venv/bin/flask --app app import-games --limite 40 || true  # jogos reais da Steam; sem rede, segue sem eles
 exec ../.venv/bin/flask --app app run --debug
