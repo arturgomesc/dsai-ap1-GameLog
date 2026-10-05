@@ -70,7 +70,8 @@ def test_imp08_listar_nao_levanta_com_rede_fora(monkeypatch):
     assert [x["erro"][:2] for x in steam.listar(2)] == ["1:", "2:"]
 
 
-def test_imp09_deploy_importa_depois_do_seed():
+def test_imp09_substituido_deploy_so_roda_seed():  # CRE-08 substitui o IMP-09
     from pathlib import Path
-    cmd = (Path(__file__).parent.parent / "render.yaml").read_text()
-    assert cmd.index("seed") < cmd.index("import-games") and "|| true" in cmd
+    raiz = Path(__file__).parent.parent
+    assert "import-games" not in (raiz / "render.yaml").read_text()
+    assert "import-games" not in (raiz / "dev.sh").read_text()
