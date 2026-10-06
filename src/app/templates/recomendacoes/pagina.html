@@ -6,7 +6,7 @@
 {% if notice %}<div class="flash">{{ notice }}</div>{% endif %}
 <div class="grid">
 {% for g, avg, why in recs %}
-  <div>{{ game_card(g, avg) }}<small class="mut">{{ why | capitalize }}</small>
+  <div>{{ game_card(g, avg) }}<small class="mut">{{ why[:1] | upper }}{{ why[1:] }}</small>
     <form method="post" action="/recomendacoes/{{ g.id }}/dispensar"><input type="hidden" name="csrf_token" value="{{ csrf_token() }}"><button class="link">Dispensar</button></form></div>
 {% else %}<p class="mut">Sem recomendações no momento.</p>{% endfor %}
 </div>
