@@ -386,10 +386,10 @@
   "cover_url": "https://cdn.cloudflare.steamstatic.com/steam/apps/870780/library_600x900.jpg"
  },
  {
-  "external_id": "3280350",
-  "title": "DEATH STRANDING 2: ON THE BEACH",
-  "synopsis": "Com companheiros ao seu lado, Sam inicia uma nova jornada para salvar a humanidade da extinção. Junte-se a eles na viagem por um mundo problemático repleto de inimigos sobrenaturais, obstáculos e uma dúvida inquietante: deveríamos ter nos conectado?",
-  "release_date": "2026-03-19",
+  "external_id": "1850570",
+  "title": "DEATH STRANDING DIRECTOR'S CUT",
+  "synopsis": "Do lendário diretor Hideo Kojima, surge uma experiência que desafia gêneros, ainda maior em DIRECTOR’S CUT. Jogando como Sam Bridges, sua missão é entregar esperança à humanidade ao conectar os sobreviventes de uma América devastada. Você conseguirá reunir este mundo destruído, um passo de cada vez?",
+  "release_date": "2022-03-30",
   "developer": "KOJIMA PRODUCTIONS",
   "genres": [
    "Ação",
@@ -398,7 +398,7 @@
   "platforms": [
    "Windows"
   ],
-  "cover_url": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/3280350/6270c77b0729e2df0a17d660286eeddfd9169386/header.jpg?t=1774022345"
+  "cover_url": "https://cdn.cloudflare.steamstatic.com/steam/apps/1850570/library_600x900.jpg"
  },
  {
   "external_id": "782330",
@@ -605,20 +605,20 @@
   "cover_url": "https://cdn.cloudflare.steamstatic.com/steam/apps/294100/library_600x900.jpg"
  },
  {
-  "external_id": "1962700",
-  "title": "Subnautica 2",
-  "synopsis": "Subnautica 2 é um jogo de aventura e sobrevivência subaquática em um novo mundo extraterrestre, desenvolvido pela Unknown Worlds. Jogue sozinho ou com até três amigos. Sobreviva criando bases e ferramentas. Explore o desconhecido para desvendar os mistérios nas profundezas.",
-  "release_date": "2026-05-14",
+  "external_id": "264710",
+  "title": "Subnautica",
+  "synopsis": "Descend into the depths of an alien underwater world filled with wonder and peril. Craft equipment, pilot submarines and out-smart wildlife to explore lush coral reefs, volcanoes, cave systems, and more - all while trying to survive.",
+  "release_date": "2018-01-23",
   "developer": "Unknown Worlds Entertainment",
   "genres": [
-   "Ação",
    "Aventura",
-   "Acesso Antecipado"
+   "Indie"
   ],
   "platforms": [
-   "Windows"
+   "Windows",
+   "macOS"
   ],
-  "cover_url": "https://cdn.cloudflare.steamstatic.com/steam/apps/1962700/library_600x900.jpg"
+  "cover_url": "https://cdn.cloudflare.steamstatic.com/steam/apps/264710/library_600x900.jpg"
  },
  {
   "external_id": "892970",
@@ -869,22 +869,21 @@
   "cover_url": "https://cdn.cloudflare.steamstatic.com/steam/apps/268500/library_600x900.jpg"
  },
  {
-  "external_id": "2868840",
-  "title": "Slay the Spire 2",
-  "synopsis": "O icônico jogo de construção de baralhos roguelike está de volta. Crie baralhos únicos, encontre criaturas bizarras e descubra relíquias de imenso poder em Slay the Spire 2!",
-  "release_date": "2026-03-05",
+  "external_id": "646570",
+  "title": "Slay the Spire",
+  "synopsis": "Nós combinamos jogos de carta com roguelike para fazer o melhor deckbuilder single player que pudemos. Monte um deck único, encontre criaturas bizarras, descubra relíquias de imenso poder, e Destrua o Pináculo(Slay The Spire)!",
+  "release_date": "2019-01-23",
   "developer": "Mega Crit",
   "genres": [
    "Indie",
-   "Estratégia",
-   "Acesso Antecipado"
+   "Estratégia"
   ],
   "platforms": [
    "Windows",
    "macOS",
    "Linux"
   ],
-  "cover_url": "https://cdn.cloudflare.steamstatic.com/steam/apps/2868840/library_600x900.jpg"
+  "cover_url": "https://cdn.cloudflare.steamstatic.com/steam/apps/646570/library_600x900.jpg"
  },
  {
   "external_id": "2379780",
@@ -1046,22 +1045,24 @@
   "cover_url": "https://cdn.cloudflare.steamstatic.com/steam/apps/230410/library_600x900.jpg"
  },
  {
-  "external_id": "2694490",
-  "title": "Path of Exile 2",
-  "synopsis": "O Path of Exile 2 é um RPG de Ação da nova geração criado pela Grinding Gear Games. Ele se passa anos após o Path of Exile original, você retornará ao mundo de Wraeclast para tentar dar um fim à corrupção que está se espalhando.",
-  "release_date": "2024-12-06",
+  "external_id": "238960",
+  "title": "Path of Exile",
+  "synopsis": "You are an Exile, struggling to survive on the dark continent of Wraeclast, as you fight to earn power that will allow you to exact your revenge against those who wronged you. Path of Exile is an online Action RPG set in a dark fantasy world. The game is completely free and will never be pay-to-win.",
+  "release_date": "2013-10-23",
   "developer": "Grinding Gear Games",
   "genres": [
    "Ação",
    "Aventura",
+   "Indie",
    "Multijogador Massivo",
    "RPG",
-   "Acesso Antecipado"
+   "Gratuitos para Jogar"
   ],
   "platforms": [
-   "Windows"
+   "Windows",
+   "macOS"
   ],
-  "cover_url": "https://cdn.cloudflare.steamstatic.com/steam/apps/2694490/library_600x900.jpg"
+  "cover_url": "https://cdn.cloudflare.steamstatic.com/steam/apps/238960/library_600x900.jpg"
  },
  {
   "external_id": "1092790",
@@ -1147,20 +1148,20 @@
   "cover_url": "https://cdn.cloudflare.steamstatic.com/steam/apps/48000/library_600x900.jpg"
  },
  {
-  "external_id": "1987080",
-  "title": "Inside the Backrooms",
-  "synopsis": "Inside the Backrooms is a horror multiplayer game mixed with different mechanics that will make you spend an intense night with friends. Explore, think, interact, but be careful, it is rumored that there are several entities wishing to find you...",
-  "release_date": "2022-06-20",
-  "developer": "MrFatcat",
+  "external_id": "304430",
+  "title": "INSIDE",
+  "synopsis": "Caçado e sozinho, um garoto acaba sendo atraído para o centro de um projeto sombrio.",
+  "release_date": "2016-07-07",
+  "developer": "Playdead",
   "genres": [
+   "Ação",
    "Aventura",
-   "Indie",
-   "Acesso Antecipado"
+   "Indie"
   ],
   "platforms": [
    "Windows"
   ],
-  "cover_url": "https://cdn.cloudflare.steamstatic.com/steam/apps/1987080/library_600x900.jpg"
+  "cover_url": "https://cdn.cloudflare.steamstatic.com/steam/apps/304430/library_600x900.jpg"
  },
  {
   "external_id": "424840",
@@ -1920,34 +1921,39 @@
   "cover_url": "https://cdn.cloudflare.steamstatic.com/steam/apps/1003590/library_600x900.jpg"
  },
  {
-  "external_id": "3219030",
-  "title": "Planet Zoo 2",
-  "synopsis": "Construa um mundo mais selvagem em Planet Zoo 2. Crie zoológicos distintos pelo mundo com animais impressionantes, incluindo espécies aquáticas e voadoras. Além disso, não fique apenas na gestão de zoológicos: solte os animais em amplas reservas de vida selvagem.",
-  "release_date": "2026-10-13",
+  "external_id": "703080",
+  "title": "Planet Zoo",
+  "synopsis": "Crie um mundo animal em Planet Zoo. Os criadores de Planet Coaster e Zoo Tycoon trazem um simulador de zoológico único. Elabore habitats complexos, gerencie seu zoológico e conviva com animais autênticos que pensam, sentem e exploram o mundo criado para eles.",
+  "release_date": "2019-11-05",
   "developer": "Frontier Developments",
   "genres": [
+   "Casual",
    "Simulação",
    "Estratégia"
   ],
   "platforms": [
    "Windows"
   ],
-  "cover_url": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/3219030/a5131aa4b84d04a55e3b9c561d7c886cc22bbe1c/header.jpg?t=1790942385"
+  "cover_url": "https://cdn.cloudflare.steamstatic.com/steam/apps/703080/library_600x900.jpg"
  },
  {
-  "external_id": "2688950",
-  "title": "Planet Coaster 2",
-  "synopsis": "Construa e personalize montanhas-russas eletrizantes e toboáguas incríveis, gerencie a melhor experiência de parque temático e compartilhe suas criações épicas. O que acha de surfar nessa onda agora mesmo? ",
-  "release_date": "2024-11-06",
+  "external_id": "493340",
+  "title": "Planet Coaster",
+  "synopsis": "Planet Coaster® - o futuro dos jogos de simulação de parques de diversão chegou! Surpreenda, alegre e emocione as multidões enquanto constrói o seu império de parques de diversão - solte a sua imaginação e partilhe o seu sucesso com o resto do mundo.",
+  "release_date": "2016-11-17",
   "developer": "Frontier Developments",
   "genres": [
+   "Ação",
+   "Aventura",
+   "Casual",
    "Simulação",
    "Estratégia"
   ],
   "platforms": [
-   "Windows"
+   "Windows",
+   "macOS"
   ],
-  "cover_url": "https://cdn.cloudflare.steamstatic.com/steam/apps/2688950/library_600x900.jpg"
+  "cover_url": "https://cdn.cloudflare.steamstatic.com/steam/apps/493340/library_600x900.jpg"
  },
  {
   "external_id": "535930",
@@ -1967,20 +1973,19 @@
   "cover_url": "https://cdn.cloudflare.steamstatic.com/steam/apps/535930/library_600x900.jpg"
  },
  {
-  "external_id": "1601580",
-  "title": "Frostpunk 2",
-  "synopsis": "Desenvolva, expanda e traga o progresso à sua cidade em um jogo de sobrevivência em sociedade, 30 anos após uma nevasca apocalíptica arrasar a Terra. Em Frostpunk 2, você enfrentará os perigos do inverno sem fim e as facções do Conselho Municipal que o acompanham de perto.",
-  "release_date": "2024-09-20",
+  "external_id": "323190",
+  "title": "Frostpunk",
+  "synopsis": "Frostpunk é o primeiro jogo de sobrevivência em sociedade. Como o governante da última cidade na Terra, é seu dever administrar tanto seus cidadãos quanto sua infraestrutura.",
+  "release_date": "2018-04-24",
   "developer": "11 bit studios",
   "genres": [
    "Simulação",
    "Estratégia"
   ],
   "platforms": [
-   "Windows",
-   "macOS"
+   "Windows"
   ],
-  "cover_url": "https://cdn.cloudflare.steamstatic.com/steam/apps/1601580/library_600x900.jpg"
+  "cover_url": "https://cdn.cloudflare.steamstatic.com/steam/apps/323190/library_600x900.jpg"
  },
  {
   "external_id": "282070",
@@ -2049,10 +2054,10 @@
   "cover_url": "https://cdn.cloudflare.steamstatic.com/steam/apps/261550/library_600x900.jpg"
  },
  {
-  "external_id": "1771300",
-  "title": "Kingdom Come: Deliverance II",
-  "synopsis": "Um RPG de ação com uma história eletrizante e um vasto mundo aberto, ambientado na Europa Medieval do século XV. Vivencie a aventura medieval definitiva pela perspectiva do jovem Henry ao embarcar em uma jornada de proporções épicas.",
-  "release_date": "2025-02-04",
+  "external_id": "379430",
+  "title": "Kingdom Come: Deliverance",
+  "synopsis": "Kingdom Come: Deliverance é um RPG histórico onde você embarca em uma aventura épica pelo mundo aberto e gigantesco da Boêmia medieval. Vingue a morte de seus pais enquanto enfrenta hordas invasoras e se envolva em missões onde suas escolhas influenciam o mundo à sua volta.",
+  "release_date": "2018-02-13",
   "developer": "Warhorse Studios",
   "genres": [
    "Ação",
@@ -2062,7 +2067,7 @@
   "platforms": [
    "Windows"
   ],
-  "cover_url": "https://cdn.cloudflare.steamstatic.com/steam/apps/1771300/library_600x900.jpg"
+  "cover_url": "https://cdn.cloudflare.steamstatic.com/steam/apps/379430/library_600x900.jpg"
  },
  {
   "external_id": "2054970",
@@ -2094,22 +2099,23 @@
   "cover_url": "https://cdn.cloudflare.steamstatic.com/steam/apps/570940/library_600x900.jpg"
  },
  {
-  "external_id": "1657630",
-  "title": "Slime Rancher 2",
-  "synopsis": "Continue as aventuras de Beatrix LeBeau enquanto ela viaja pelo Mar de Slime até a Ilha Arco-Íris, uma terra repleta de mistérios antigos e cheia de novos slimes bons de remelexo para criar, na sequência do grande sucesso Slime Rancher",
-  "release_date": "2025-09-23",
+  "external_id": "433340",
+  "title": "Slime Rancher",
+  "synopsis": "Slime Rancher conta a história de Beatrix LeBeau, uma jovem e corajosa rancheira que parte para uma vida a mil anos-luz de distância da Terra, na \"Borda Muito Distante\", onde tenta ganhar a vida criando slimes.",
+  "release_date": "2017-08-01",
   "developer": "Monomi Park",
   "genres": [
    "Ação",
    "Aventura",
-   "Casual",
    "Indie",
    "Simulação"
   ],
   "platforms": [
-   "Windows"
+   "Windows",
+   "macOS",
+   "Linux"
   ],
-  "cover_url": "https://cdn.cloudflare.steamstatic.com/steam/apps/1657630/library_600x900.jpg"
+  "cover_url": "https://cdn.cloudflare.steamstatic.com/steam/apps/433340/library_600x900.jpg"
  },
  {
   "external_id": "648800",
@@ -2247,18 +2253,19 @@
   "cover_url": "https://cdn.cloudflare.steamstatic.com/steam/apps/1253920/library_600x900.jpg"
  },
  {
-  "external_id": "1346020",
-  "title": "Wargroove 2",
-  "synopsis": "Problemas se aproximam de Aurania. Uma nova facção ambiciosa desenterrou relíquias proibidas com potencial catastrófico. Mas até onde eles irão para alcançar a glória? Explore o campo de batalha, o mar e o céu com novos Comandantes, usando a sua inteligência para vencer essa guerra em turnos!",
-  "release_date": "2023-10-05",
+  "external_id": "607050",
+  "title": "Wargroove",
+  "synopsis": "Entre no campo de batalha com Wargroove, um jogo de estratégia para até 4 jogadores! Escolha seu comandante e mate seus rivais nesta guerra por turnos. Crie e compartilhe seus próprios mapas, cenas e campanhas.",
+  "release_date": "2019-02-01",
   "developer": "Chucklefish",
   "genres": [
+   "Indie",
    "Estratégia"
   ],
   "platforms": [
    "Windows"
   ],
-  "cover_url": "https://cdn.cloudflare.steamstatic.com/steam/apps/1346020/library_600x900.jpg"
+  "cover_url": "https://cdn.cloudflare.steamstatic.com/steam/apps/607050/library_600x900.jpg"
  },
  {
   "external_id": "590380",
@@ -2368,19 +2375,21 @@
   "cover_url": "https://cdn.cloudflare.steamstatic.com/steam/apps/1703340/library_600x900.jpg"
  },
  {
-  "external_id": "617830",
-  "title": "SUPERHOT VR",
-  "synopsis": "Perca a noção do que é real. Mergulhe de corpo e mente. Confronte o mundo evocativo e a elegância brutal de SUPERHOT VR. Os inimigos surgem de todos os lados, dezenas de balas voam pelo ar... espere. Há algo diferente aqui...",
-  "release_date": "2017-05-25",
+  "external_id": "322500",
+  "title": "SUPERHOT",
+  "synopsis": "SUPERHOT é o primeiro jogo de tiro em primeira pessoa em que o tempo passa apenas quando você se move. Não há barras regeneradoras de vida. Não há munições espalhadas em locais convenientes. É só você, sozinho e desarmado, pegando as armas dos inimigos abatidos para atirar, cortar e desviar de uma saraivada de balas em câmera lenta.",
+  "release_date": "2016-02-25",
   "developer": "SUPERHOT Team",
   "genres": [
    "Ação",
    "Indie"
   ],
   "platforms": [
-   "Windows"
+   "Windows",
+   "macOS",
+   "Linux"
   ],
-  "cover_url": "https://cdn.cloudflare.steamstatic.com/steam/apps/617830/library_600x900.jpg"
+  "cover_url": "https://cdn.cloudflare.steamstatic.com/steam/apps/322500/library_600x900.jpg"
  },
  {
   "external_id": "287980",
@@ -2416,5 +2425,74 @@
    "Windows"
   ],
   "cover_url": "https://cdn.cloudflare.steamstatic.com/steam/apps/1927720/library_600x900.jpg"
+ },
+ {
+  "external_id": "1145360",
+  "title": "Hades",
+  "synopsis": "Desafie o deus dos mortos enquanto você batalha para sair do Submundo neste jogo roguelike dos mesmos criadores de Bastion, Transistor e Pyre.",
+  "release_date": "2020-09-17",
+  "developer": "Supergiant Games",
+  "genres": [
+   "Ação",
+   "Indie",
+   "RPG"
+  ],
+  "platforms": [
+   "Windows",
+   "macOS"
+  ],
+  "cover_url": "https://cdn.cloudflare.steamstatic.com/steam/apps/1145360/library_600x900.jpg"
+ },
+ {
+  "external_id": "252950",
+  "title": "Rocket League®",
+  "synopsis": "Futebol e pilotagem se encontram mais uma vez na aguardada sequência do jogo clássico de arena baseado em física tão amado pelos fãs, o Supersonic Acrobatic Rocket-Powered Battle-Cars!",
+  "release_date": "2015-07-06",
+  "developer": "Psyonix LLC",
+  "genres": [
+   "Ação",
+   "Indie",
+   "Corrida",
+   "Esportes"
+  ],
+  "platforms": [
+   "Windows"
+  ],
+  "cover_url": "https://cdn.cloudflare.steamstatic.com/steam/apps/252950/library_600x900.jpg"
+ },
+ {
+  "external_id": "2252570",
+  "title": "Football Manager 2024",
+  "synopsis": "Build a world-class team ready to dominate your rivals in football’s most prestigious competitions. Progress never stops when you’re pursuing footballing greatness.",
+  "release_date": "2023-11-06",
+  "developer": "Sports Interactive",
+  "genres": [
+   "Simulação",
+   "Esportes",
+   "Estratégia"
+  ],
+  "platforms": [
+   "Windows",
+   "macOS"
+  ],
+  "cover_url": "https://cdn.cloudflare.steamstatic.com/steam/apps/2252570/library_600x900.jpg"
+ },
+ {
+  "external_id": "1097150",
+  "title": "Fall Guys",
+  "synopsis": "Fall Guys é um jogo party royale gratuito, multiplataforma e multijogador. Dispute com seus amigos em pistas de obstáculos desajeitadas e absurdas ou construa seu próprio percurso caótico para compartilhar com a comunidade.",
+  "release_date": "2020-08-03",
+  "developer": "Mediatonic",
+  "genres": [
+   "Ação",
+   "Casual",
+   "Indie",
+   "Multijogador Massivo",
+   "Esportes"
+  ],
+  "platforms": [
+   "Windows"
+  ],
+  "cover_url": "https://cdn.cloudflare.steamstatic.com/steam/apps/1097150/library_600x900.jpg"
  }
 ]
