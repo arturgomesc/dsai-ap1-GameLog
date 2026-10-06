@@ -13,6 +13,10 @@ O catálogo só tem jogos fictícios gerados pelo seed. Esta parte importa jogos
 - IMP-07: jogo com `cover_url` mostra a imagem real na home, nas listagens e na página do jogo; jogo sem ela continua com a capa SVG gerada
 - IMP-08: a importação usa só a rede da fonte e nenhuma chave, e os testes rodam sem rede (fonte falsa injetada)
 - IMP-09: o deploy executa a importação depois do seed; se ela falhar, o app sobe do mesmo jeito
+- IMP-10: a data de lançamento da Steam é lida corretamente para os 12 meses, em português (`24/fev./2022`) e em inglês (`12 Oct, 2020`); mês fora da tabela ou data impossível resulta em ausência de data (IMP-06), nunca em mês trocado
 
 ## Fora do escopo
 Chave de API, sincronização periódica, preços, avaliações da Steam, importação pela interface do painel admin, remoção dos jogos fictícios.
+
+## Registro de alterações
+- 2026-10-06: corrigido erro na leitura de datas (IMP-10). A tabela de meses numerava errado: março virava abril, junho virava setembro, julho virava outubro e novembro virava "sem data", o que descartava jogos lançados em novembro e gravava datas erradas nos de março, junho e julho. O snapshot do catálogo foi regenerado.

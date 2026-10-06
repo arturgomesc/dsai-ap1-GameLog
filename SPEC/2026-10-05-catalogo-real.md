@@ -18,4 +18,4 @@ O catálogo publicado deve mostrar apenas jogos reais, com capa oficial e alguns
 Resenhas escritas à mão para cada jogo, sincronização periódica com a Steam, importação pela interface admin.
 
 ## Registro de alterações
-- 2026-10-06: no snapshot, "Among Us 3D" (Steam 3168600) foi trocado por "Among Us" (Steam 945360, Innersloth), que é o jogo pretendido. A busca por nome da Steam trouxe a versão 3D na primeira geração. Os demais critérios não mudam.
+- 2026-10-06: o snapshot `src/app/dados/jogos.json` foi regenerado após a correção de datas da importação (IMP-10). Entraram jogos que tinham sido descartados por terem lançamento em novembro (como Half-Life 2, Left 4 Dead 2 e Apex Legends), as datas de março, junho e julho foram corrigidas, e "Among Us" (Steam 945360) passou a ser o jogo escolhido no lugar de "Among Us 3D" (Steam 3168600), que só entrou porque o original foi descartado. Os critérios não mudam.
