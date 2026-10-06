@@ -15,20 +15,20 @@
   <form class="search" action="/buscar" method="get">
     <input type="search" name="q" value="{{ request.args.get('q', '') }}" placeholder="Buscar jogos…" aria-label="Buscar">
   </form>
-  <nav>
-    <a href="/buscar">Explorar</a>
+  <nav class="nav-actions" aria-label="Navegação principal">
+    <a class="nav-link{% if request.path == '/buscar' %} is-active{% endif %}" href="/buscar"{% if request.path == '/buscar' %} aria-current="page"{% endif %}>Explorar</a>
     {% if me %}
-      <a href="/feed">Feed</a>
-      <a href="/meus-jogos">Meus jogos</a>
-      <a href="/listas">Listas</a>
-      <a href="/recomendacoes">Para você</a>
-      <a href="/comparar">Comparar</a>
-      {% if me.is_admin %}<a href="/admin">Admin</a>{% endif %}
-      <a href="/u/{{ me.username }}">@{{ me.username }}</a>
-      <form method="post" action="/sair" class="inline"><input type="hidden" name="csrf_token" value="{{ csrf_token() }}"><button class="link">Sair</button></form>
+      <a class="nav-link{% if request.path == '/feed' %} is-active{% endif %}" href="/feed"{% if request.path == '/feed' %} aria-current="page"{% endif %}>Feed</a>
+      <a class="nav-link{% if request.path == '/meus-jogos' %} is-active{% endif %}" href="/meus-jogos"{% if request.path == '/meus-jogos' %} aria-current="page"{% endif %}>Meus jogos</a>
+      <a class="nav-link{% if request.path == '/listas' %} is-active{% endif %}" href="/listas"{% if request.path == '/listas' %} aria-current="page"{% endif %}>Listas</a>
+      <a class="nav-link{% if request.path == '/recomendacoes' %} is-active{% endif %}" href="/recomendacoes"{% if request.path == '/recomendacoes' %} aria-current="page"{% endif %}>Para você</a>
+      <a class="nav-link{% if request.path == '/comparar' %} is-active{% endif %}" href="/comparar"{% if request.path == '/comparar' %} aria-current="page"{% endif %}>Comparar</a>
+      {% if me.is_admin %}<a class="nav-link{% if request.path.startswith('/admin') %} is-active{% endif %}" href="/admin"{% if request.path.startswith('/admin') %} aria-current="page"{% endif %}>Admin</a>{% endif %}
+      <a class="nav-link{% if request.path == '/u/' ~ me.username %} is-active{% endif %}" href="/u/{{ me.username }}"{% if request.path == '/u/' ~ me.username %} aria-current="page"{% endif %}>@{{ me.username }}</a>
+      <form method="post" action="/sair" class="inline nav-logout"><input type="hidden" name="csrf_token" value="{{ csrf_token() }}"><button class="ghost">Sair</button></form>
     {% else %}
-      <a href="/entrar">Entrar</a>
-      <a class="btn" href="/cadastro">Criar conta</a>
+      <a class="nav-link{% if request.path == '/entrar' %} is-active{% endif %}" href="/entrar"{% if request.path == '/entrar' %} aria-current="page"{% endif %}>Entrar</a>
+      <a class="btn btn-primary nav-signup" href="/cadastro">Criar conta</a>
     {% endif %}
   </nav>
 </header>
