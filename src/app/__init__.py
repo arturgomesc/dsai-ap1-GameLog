@@ -54,11 +54,17 @@ def create_app(config=None):
 
         return {"me": current_user(), "csrf_token": csrf_token}
 
-    for code, msg in {400: "Requisição inválida", 403: "Acesso negado", 404: "Página não encontrada"}.items():
-        app.register_error_handler(
-            code, lambda e, code=code, msg=msg: (render_template("erro.html", code=code, msg=msg), code)
-        )
-    app.register_error_handler(500, lambda e: (render_template("erro.html", code=500, msg="Erro interno"), 500))
+    def erro(code, msg):
+        def handler(e):
+            if request.path == "/api" or request.path.startswith("/api/"):  # API-08: JSON, nunca HTML
+                from .api import erro as erro_json
+                return erro_json(code, msg)
+            return render_template("erro.html", code=code, msg=msg), code
+        return handler
+
+    for code, msg in {400: "Requisição inválida", 403: "Acesso negado", 404: "Página não encontrada",
+                      405: "Método não permitido", 500: "Erro interno"}.items():
+        app.register_error_handler(code, erro(code, msg))
 
     from . import cli, routes
 
