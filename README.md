@@ -21,10 +21,10 @@ cd src
 export ADMIN_EMAIL=admin@example.com ADMIN_PASSWORD=<senha>   # ver .env.example
 flask --app app seed        # 139 jogos reais (snapshot da Steam), 30 usuários fictícios com avaliações em ~30 jogos (senha: senha1234)
 flask --app app run
-cd .. && pytest             # 103 testes, um ou mais por critério de aceitação
+cd .. && pytest             # 112 testes, um ou mais por critério de aceitação
 ```
 
-O catálogo vem de `src/app/dados/jogos.json` (gerado com `flask --app app export-games --termos "Nome 1;Nome 2" --saida src/app/dados/jogos.json`). Para somar mais jogos da Steam: `flask --app app import-games [--fonte steam] [--limite 40] [--termo nome]` (API pública da Steam, sem chave). Para somar outra fonte (RAWG, IGDB), crie `src/app/fontes/<nome>.py` com `listar(limite, termo)` e registre em `FONTES`. Em banco local antigo, rode `./dev.sh reset` (o Game ganhou colunas).
+O catálogo vem de `src/app/dados/jogos.json` (gerado com `flask --app app export-games --termos "Nome 1;Nome 2" --saida src/app/dados/jogos.json`). Pelo painel, o admin busca e importa jogos em `/admin/importar`. Pela linha de comando: `flask --app app import-games [--fonte steam] [--limite 40] [--termo nome]` (API pública da Steam, sem chave). Para somar outra fonte (RAWG, IGDB), crie `src/app/fontes/<nome>.py` com `listar(limite, termo)` e registre em `FONTES`. Em banco local antigo, rode `./dev.sh reset` (o Game ganhou colunas).
 
 Deploy: `render.yaml` (Render, plano gratuito; o seed reproduzível recria o banco a cada start).
 Variáveis: `SECRET_KEY` (gerada), `ADMIN_EMAIL`, `ADMIN_PASSWORD`.
@@ -43,6 +43,7 @@ Variáveis: `SECRET_KEY` (gerada), `ADMIN_EMAIL`, `ADMIN_PASSWORD`.
 | recomendacoes (REC-01..09) | `recomendacoes.py` | `tests/test_recomendacoes.py` |
 | painel-admin (ADM-01..10) | `admin.py` | `tests/test_admin.py` |
 | importacao-steam (IMP-01..09) | `fontes/`, `cli.py` | `tests/test_importacao.py` |
+| importar-pelo-admin (IAD-01..09) | `admin.py`, `fontes/steam.py`, `templates/admin/importar.html` | `tests/test_importar_admin.py` |
 | catalogo-real (CRE-01..09) | `seed.py`, `fontes/arquivo.py`, `dados/jogos.json` | `tests/test_catalogo_real.py` |
 
 ## cloc
@@ -50,14 +51,14 @@ Variáveis: `SECRET_KEY` (gerada), `ADMIN_EMAIL`, `ADMIN_PASSWORD`.
 ```
 $ cloc . --vcs=git --exclude-dir=node_modules,vendor,dist,build,prompts --exclude-lang=Markdown,JSON,YAML,CSV,Text,SVG --not-match-f='(lock|\.min\.)'
 Language        files   blank   comment   code
-Python             31     601        36   2494
-HTML               23       5         0    486
-CSS                 1       0         0     42
-Bourne Shell        1       1         2     13
-INI                 1       0         0      3
-SUM:               57     607        38   3038
+Python           32     636        39   2610
+HTML             24       5         0    506
+CSS               1       0         0     42
+Bourne Shell      1       1         2     13
+INI               1       0         0      3
+SUM:             59     642        41   3174
 ```
 
-**Nota sobre a meta de 100 mil linhas:** o escopo das 12 specs (≈105 critérios de aceitação) resulta em ~3 mil linhas de
+**Nota sobre a meta de 100 mil linhas:** o escopo das 13 specs (≈115 critérios de aceitação) resulta em ~3 mil linhas de
 código real. Preferimos entregar a aplicação completa e testada a inflar o número com código duplicado ou gerado;
 o valor medido está reportado acima sem ajuste.
