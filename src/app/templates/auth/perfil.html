@@ -1,5 +1,5 @@
 {% extends "base.html" %}
-{% from "_macros.html" import avatar %}
+{% from "_macros.html" import avatar, pager %}
 {% block title %}{{ u.display_name }} (@{{ u.username }}) — GameLog{% endblock %}
 {% block content %}
 <section class="panel">
@@ -25,10 +25,32 @@
     <a href="/u/{{ u.username }}/seguindo"><strong>{{ stats.seguindo }}</strong> seguindo</a>
   </p>
 </section>
+<section class="panel"><h2>Jogos por status</h2>
+  <p>{% for k, (nome, n) in status.items() %}<span class="tag">{{ nome }}: <strong>{{ n }}</strong></span>{% endfor %}</p>
+</section>
 <div class="row">
-  <section class="panel"><h2>Avaliações recentes</h2>
-    {% for r in reviews %}<p><a href="/jogos/{{ r.game.slug }}">{{ r.game.title }}</a> — ★ {{ r.score }}/10</p>
+  <section class="panel"><h2>Notas</h2>
+    <p>Nota média dada: <strong>{{ '%.1f' | format(media) if media is not none else '—' }}</strong>
+      <span class="mut">({{ total }} avaliações)</span></p>
+    {% if total %}<div class="hist" aria-label="Histograma de notas">{% for n, c in hist.items() %}<div title="Nota {{ n }}: {{ c }}" style="height:{{ (c * 100 / hist_max) | round | int }}%"></div>{% endfor %}</div>
+    <div class="mut" style="display:flex;justify-content:space-between"><span>0</span><span>10</span></div>{% endif %}
+  </section>
+  <section class="panel"><h2>Gêneros favoritos</h2>
+    {% for nome, slug, n in generos %}<p><a href="/generos/{{ slug }}">{{ nome }}</a> <span class="mut">· {{ n }} {{ 'jogo' if n == 1 else 'jogos' }}</span></p>
+    {% else %}<p class="mut">Ainda sem dados suficientes.</p>{% endfor %}
+  </section>
+</div>
+{% if favoritos %}<h2>Jogos favoritos</h2>
+<div class="grid">{% for r in favoritos %}<a class="card" href="/jogos/{{ r.game.slug }}">
+  <img src="{{ r.game.cover }}" alt="Capa de {{ r.game.title }}" loading="lazy"><strong>{{ r.game.title }}</strong>
+  <span class="score">★ {{ r.score }}/10</span></a>{% endfor %}</div>{% endif %}
+<div class="row">
+  <section class="panel" style="flex:2"><h2>Linha do tempo de avaliações</h2>
+    {% for r in linha.items %}<p><a href="/jogos/{{ r.game.slug }}">{{ r.game.title }}</a> — ★ {{ r.score }}/10
+      <span class="mut">· {{ r.created_at.strftime('%d/%m/%Y') }}</span>
+      {% if r.text %}<br><span class="mut">“{{ r.text[:140] }}{{ '…' if r.text | length > 140 }}”</span>{% endif %}</p>
     {% else %}<p class="mut">Nenhuma avaliação ainda.</p>{% endfor %}
+    {{ pager(linha) }}
   </section>
   <section class="panel"><h2>Listas</h2>
     {% for l in lists %}<p><a href="/listas/{{ l.id }}">{{ l.name }}</a>{% if not l.public %} <span class="tag">privada</span>{% endif %}</p>

@@ -5,6 +5,7 @@ from flask import Blueprint, abort, flash, redirect, render_template, request, s
 from werkzeug.security import check_password_hash, generate_password_hash
 
 from .models import Activity, Follow, GameList, LoginAttempt, Review, User, db, now
+from .perfil import dados as dados_perfil
 from .util import current_user, login_required, safe_next
 
 bp = Blueprint("auth", __name__)
@@ -97,16 +98,17 @@ def profile(username):
     lists = GameList.query.filter_by(user_id=user.id)
     if not own:
         lists = lists.filter_by(public=True)
+    extra = dados_perfil(user.id, request.args.get("page"))
     stats = {
-        "avaliacoes": Review.query.filter_by(user_id=user.id, hidden=False).count(),
+        "avaliacoes": extra["total"],  # PRF-06: mesmo critério das estatísticas (sem ocultas nem jogos removidos)
         "listas": lists.count(),
         "seguidores": Follow.query.filter_by(followed_id=user.id).count(),
         "seguindo": Follow.query.filter_by(follower_id=user.id).count(),
     }
     following = bool(me and not own and Follow.query.filter_by(follower_id=me.id, followed_id=user.id).first())
-    reviews = Review.query.filter_by(user_id=user.id, hidden=False).order_by(Review.created_at.desc()).limit(5).all()
     return render_template(
-        "auth/perfil.html", u=user, own=own, stats=stats, following=following, reviews=reviews, lists=lists.limit(10).all()
+        "auth/perfil.html", u=user, own=own, stats=stats, following=following, lists=lists.limit(10).all(),
+        **extra,
     )
 
 
