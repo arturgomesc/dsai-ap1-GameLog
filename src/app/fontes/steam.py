@@ -8,8 +8,10 @@ from urllib.parse import quote
 from urllib.request import Request, urlopen
 
 LOJA = "https://store.steampowered.com/api"
-MESES = {m: i for i, m in enumerate("jan feb fev mar apr abr may mai jun jul aug ago sep set oct out nov dec dez".split(), 1)}
-MESES.update(feb=2, fev=2, apr=4, abr=4, may=5, mai=5, aug=8, ago=8, sep=9, set=9, oct=10, out=10, dec=12, dez=12)
+MESES = {  # português e inglês, abreviados sem acento (IMP-10)
+    "jan": 1, "fev": 2, "feb": 2, "mar": 3, "abr": 4, "apr": 4, "mai": 5, "may": 5, "jun": 6,
+    "jul": 7, "ago": 8, "aug": 8, "set": 9, "sep": 9, "out": 10, "oct": 10, "nov": 11, "dez": 12, "dec": 12,
+}
 PLATAFORMAS = {"windows": "Windows", "mac": "macOS", "linux": "Linux"}
 
 

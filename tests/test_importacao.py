@@ -75,3 +75,13 @@ def test_imp09_substituido_deploy_so_roda_seed():  # CRE-08 substitui o IMP-09
     raiz = Path(__file__).parent.parent
     assert "import-games" not in (raiz / "render.yaml").read_text()
     assert "import-games" not in (raiz / "dev.sh").read_text()
+
+
+def test_imp10_doze_meses_em_portugues_e_ingles():
+    pt = "jan fev mar abr mai jun jul ago set out nov dez".split()
+    en = "Jan Feb Mar Apr May Jun Jul Aug Sep Oct Nov Dec".split()
+    for i, (p, e) in enumerate(zip(pt, en), 1):
+        assert steam.parse_data(f"15/{p}./2020") == date(2020, i, 15), p
+        assert steam.parse_data(f"15 {e}, 2020") == date(2020, i, 15), e
+        assert steam.parse_data(f"{e} 15, 2020") == date(2020, i, 15), e
+    assert steam.parse_data("31/fev./2020") is None and steam.parse_data("15 Xyz, 2020") is None
