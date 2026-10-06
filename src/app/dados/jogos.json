@@ -14,7 +14,7 @@
    "Windows",
    "macOS"
   ],
-  "cover_url": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1086940/48a2fcbda8565bb45025e98fd8ebde8a7203f6a0/header.jpg?t=1777363040"
+  "cover_url": "https://cdn.cloudflare.steamstatic.com/steam/apps/1086940/library_600x900.jpg"
  },
  {
   "external_id": "1245620",
@@ -29,7 +29,7 @@
   "platforms": [
    "Windows"
   ],
-  "cover_url": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1245620/f0b19c231f86fa0e633ff88a1a63459443017728/header_alt_assets_3.jpg?t=1790290043"
+  "cover_url": "https://cdn.cloudflare.steamstatic.com/steam/apps/1245620/library_600x900.jpg"
  },
  {
   "external_id": "1091500",
@@ -44,7 +44,7 @@
    "Windows",
    "macOS"
   ],
-  "cover_url": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1091500/e9047d8ec47ae3d94bb8b464fb0fc9e9972b4ac7/header.jpg?t=1784714077"
+  "cover_url": "https://cdn.cloudflare.steamstatic.com/steam/apps/1091500/library_600x900.jpg"
  },
  {
   "external_id": "1174180",
@@ -59,7 +59,7 @@
   "platforms": [
    "Windows"
   ],
-  "cover_url": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1174180/header.jpg?t=1759502961"
+  "cover_url": "https://cdn.cloudflare.steamstatic.com/steam/apps/1174180/library_600x900.jpg"
  },
  {
   "external_id": "292030",
@@ -73,7 +73,7 @@
   "platforms": [
    "Windows"
   ],
-  "cover_url": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/292030/69328944126787c4470dfd0a4cbe60c9c874e58a/header_alt_assets_1_brazilian.jpg?t=1790845156"
+  "cover_url": "https://cdn.cloudflare.steamstatic.com/steam/apps/292030/library_600x900.jpg"
  },
  {
   "external_id": "1145350",
@@ -90,7 +90,7 @@
    "Windows",
    "macOS"
   ],
-  "cover_url": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1145350/91ac334a2c137d08968ccc0bc474a02579602100/header.jpg?t=1779901265"
+  "cover_url": "https://cdn.cloudflare.steamstatic.com/steam/apps/1145350/library_600x900.jpg"
  },
  {
   "external_id": "367520",
@@ -108,7 +108,7 @@
    "macOS",
    "Linux"
   ],
-  "cover_url": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/367520/3c3489495136b26b34f8a9543c7f5645b99d388c/header.jpg?t=1776125684"
+  "cover_url": "https://cdn.cloudflare.steamstatic.com/steam/apps/367520/library_600x900.jpg"
  },
  {
   "external_id": "413150",
@@ -126,7 +126,7 @@
    "macOS",
    "Linux"
   ],
-  "cover_url": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/413150/header.jpg?t=1786554168"
+  "cover_url": "https://cdn.cloudflare.steamstatic.com/steam/apps/413150/library_600x900.jpg"
  },
  {
   "external_id": "504230",
@@ -144,7 +144,7 @@
    "macOS",
    "Linux"
   ],
-  "cover_url": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/504230/header.jpg?t=1714089525"
+  "cover_url": "https://cdn.cloudflare.steamstatic.com/steam/apps/504230/library_600x900.jpg"
  },
  {
   "external_id": "105600",
@@ -163,7 +163,7 @@
    "macOS",
    "Linux"
   ],
-  "cover_url": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/105600/header.jpg?t=1769844435"
+  "cover_url": "https://cdn.cloudflare.steamstatic.com/steam/apps/105600/library_600x900.jpg"
  },
  {
   "external_id": "620",
@@ -179,7 +179,7 @@
    "Windows",
    "Linux"
   ],
-  "cover_url": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/620/faffc0f560786e2f05104a8d2fac837c6969bf13/header.jpg?t=1790187113"
+  "cover_url": "https://cdn.cloudflare.steamstatic.com/steam/apps/620/library_600x900.jpg"
  },
  {
   "external_id": "730",
@@ -195,7 +195,7 @@
    "Windows",
    "Linux"
   ],
-  "cover_url": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/730/162664aa5da85f418105350c5d67ca565f6c3713/header.jpg?t=1789251637"
+  "cover_url": "https://cdn.cloudflare.steamstatic.com/steam/apps/730/library_600x900.jpg"
  },
  {
   "external_id": "570",
@@ -213,7 +213,7 @@
    "macOS",
    "Linux"
   ],
-  "cover_url": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/570/header.jpg?t=1769535998"
+  "cover_url": "https://cdn.cloudflare.steamstatic.com/steam/apps/570/library_600x900.jpg"
  },
  {
   "external_id": "374320",
@@ -227,7 +227,7 @@
   "platforms": [
    "Windows"
   ],
-  "cover_url": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/374320/header.jpg?t=1748630784"
+  "cover_url": "https://cdn.cloudflare.steamstatic.com/steam/apps/374320/library_600x900.jpg"
  },
  {
   "external_id": "814380",
@@ -242,7 +242,7 @@
   "platforms": [
    "Windows"
   ],
-  "cover_url": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/814380/header.jpg?t=1762888662"
+  "cover_url": "https://cdn.cloudflare.steamstatic.com/steam/apps/814380/library_600x900.jpg"
  },
  {
   "external_id": "2050650",
@@ -257,7 +257,7 @@
   "platforms": [
    "Windows"
   ],
-  "cover_url": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/2050650/header.jpg?t=1772502922"
+  "cover_url": "https://cdn.cloudflare.steamstatic.com/steam/apps/2050650/library_600x900.jpg"
  },
  {
   "external_id": "1196590",
@@ -271,7 +271,7 @@
   "platforms": [
    "Windows"
   ],
-  "cover_url": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1196590/header.jpg?t=1776927117"
+  "cover_url": "https://cdn.cloudflare.steamstatic.com/steam/apps/1196590/library_600x900.jpg"
  },
  {
   "external_id": "588650",
@@ -289,7 +289,7 @@
    "macOS",
    "Linux"
   ],
-  "cover_url": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/588650/header.jpg?t=1779086887"
+  "cover_url": "https://cdn.cloudflare.steamstatic.com/steam/apps/588650/library_600x900.jpg"
  },
  {
   "external_id": "268910",
@@ -305,7 +305,7 @@
    "Windows",
    "macOS"
   ],
-  "cover_url": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/268910/header.jpg?t=1709068852"
+  "cover_url": "https://cdn.cloudflare.steamstatic.com/steam/apps/268910/library_600x900.jpg"
  },
  {
   "external_id": "391540",
@@ -322,7 +322,7 @@
    "macOS",
    "Linux"
   ],
-  "cover_url": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/391540/header.jpg?t=1757349115"
+  "cover_url": "https://cdn.cloudflare.steamstatic.com/steam/apps/391540/library_600x900.jpg"
  },
  {
   "external_id": "632470",
@@ -337,7 +337,7 @@
    "Windows",
    "macOS"
   ],
-  "cover_url": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/632470/816ea59d6d8ac525f79a07c3a7afa94eddb3437c/header.jpg?t=1780913406"
+  "cover_url": "https://cdn.cloudflare.steamstatic.com/steam/apps/632470/library_600x900.jpg"
  },
  {
   "external_id": "870780",
@@ -353,7 +353,7 @@
    "Windows",
    "macOS"
   ],
-  "cover_url": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/870780/ec621653454cdad232187af4eb79f23c05aceca5/header.jpg?t=1781607969"
+  "cover_url": "https://cdn.cloudflare.steamstatic.com/steam/apps/870780/library_600x900.jpg"
  },
  {
   "external_id": "3280350",
@@ -382,7 +382,7 @@
   "platforms": [
    "Windows"
   ],
-  "cover_url": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/782330/feaf8293bcd2d078422faa547bc0d707c08f606e/header.jpg?t=1783432602"
+  "cover_url": "https://cdn.cloudflare.steamstatic.com/steam/apps/782330/library_600x900.jpg"
  },
  {
   "external_id": "611660",
@@ -396,7 +396,7 @@
   "platforms": [
    "Windows"
   ],
-  "cover_url": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/611660/header.jpg?t=1607445202"
+  "cover_url": "https://cdn.cloudflare.steamstatic.com/steam/apps/611660/library_600x900.jpg"
  },
  {
   "external_id": "22380",
@@ -411,7 +411,7 @@
   "platforms": [
    "Windows"
   ],
-  "cover_url": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/22380/header.jpg?t=1765992876"
+  "cover_url": "https://cdn.cloudflare.steamstatic.com/steam/apps/22380/library_600x900.jpg"
  },
  {
   "external_id": "489830",
@@ -425,7 +425,7 @@
   "platforms": [
    "Windows"
   ],
-  "cover_url": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/489830/header.jpg?t=1786648247"
+  "cover_url": "https://cdn.cloudflare.steamstatic.com/steam/apps/489830/library_600x900.jpg"
  },
  {
   "external_id": "1328670",
@@ -440,7 +440,7 @@
   "platforms": [
    "Windows"
   ],
-  "cover_url": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1328670/header.jpg?t=1777395134"
+  "cover_url": "https://cdn.cloudflare.steamstatic.com/steam/apps/1328670/library_600x900.jpg"
  },
  {
   "external_id": "435150",
@@ -457,7 +457,7 @@
    "Windows",
    "macOS"
   ],
-  "cover_url": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/435150/3f6ee788cb01bd65097c52399d536eb424b4876f/header.jpg?t=1765811123"
+  "cover_url": "https://cdn.cloudflare.steamstatic.com/steam/apps/435150/library_600x900.jpg"
  },
  {
   "external_id": "1687950",
@@ -471,7 +471,7 @@
   "platforms": [
    "Windows"
   ],
-  "cover_url": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1687950/header.jpg?t=1783356822"
+  "cover_url": "https://cdn.cloudflare.steamstatic.com/steam/apps/1687950/library_600x900.jpg"
  },
  {
   "external_id": "582010",
@@ -485,7 +485,7 @@
   "platforms": [
    "Windows"
   ],
-  "cover_url": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/582010/header.jpg?t=1773328926"
+  "cover_url": "https://cdn.cloudflare.steamstatic.com/steam/apps/582010/library_600x900.jpg"
  },
  {
   "external_id": "289070",
@@ -501,7 +501,7 @@
    "macOS",
    "Linux"
   ],
-  "cover_url": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/289070/header.jpg?t=1784651829"
+  "cover_url": "https://cdn.cloudflare.steamstatic.com/steam/apps/289070/library_600x900.jpg"
  },
  {
   "external_id": "255710",
@@ -518,7 +518,7 @@
    "macOS",
    "Linux"
   ],
-  "cover_url": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/255710/header.jpg?t=1790873934"
+  "cover_url": "https://cdn.cloudflare.steamstatic.com/steam/apps/255710/library_600x900.jpg"
  },
  {
   "external_id": "427520",
@@ -537,7 +537,7 @@
    "macOS",
    "Linux"
   ],
-  "cover_url": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/427520/ab9a2df0a77caebde20dc45adc021de8cdcf7cc5/header.jpg?t=1787348817"
+  "cover_url": "https://cdn.cloudflare.steamstatic.com/steam/apps/427520/library_600x900.jpg"
  },
  {
   "external_id": "526870",
@@ -554,7 +554,7 @@
   "platforms": [
    "Windows"
   ],
-  "cover_url": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/526870/header.jpg?t=1791192059"
+  "cover_url": "https://cdn.cloudflare.steamstatic.com/steam/apps/526870/library_600x900.jpg"
  },
  {
   "external_id": "294100",
@@ -572,7 +572,7 @@
    "macOS",
    "Linux"
   ],
-  "cover_url": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/294100/76e0613b8197327299d5dbabb0a7fd7828a689a2/header.jpg?t=1782756789"
+  "cover_url": "https://cdn.cloudflare.steamstatic.com/steam/apps/294100/library_600x900.jpg"
  },
  {
   "external_id": "1962700",
@@ -588,7 +588,7 @@
   "platforms": [
    "Windows"
   ],
-  "cover_url": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1962700/header.jpg?t=1785967256"
+  "cover_url": "https://cdn.cloudflare.steamstatic.com/steam/apps/1962700/library_600x900.jpg"
  },
  {
   "external_id": "892970",
@@ -607,7 +607,7 @@
    "macOS",
    "Linux"
   ],
-  "cover_url": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/892970/1888731b59362fca6c026cdbafa3dfffd45c3146/header_alt_assets_6.jpg?t=1790220314"
+  "cover_url": "https://cdn.cloudflare.steamstatic.com/steam/apps/892970/library_600x900.jpg"
  },
  {
   "external_id": "322330",
@@ -628,7 +628,7 @@
    "macOS",
    "Linux"
   ],
-  "cover_url": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/322330/51e5f44e4e38ce02a985687df4fdc8feb678219b/header.jpg?t=1790287771"
+  "cover_url": "https://cdn.cloudflare.steamstatic.com/steam/apps/322330/library_600x900.jpg"
  },
  {
   "external_id": "242760",
@@ -645,7 +645,7 @@
   "platforms": [
    "Windows"
   ],
-  "cover_url": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/242760/header.jpg?t=1699381053"
+  "cover_url": "https://cdn.cloudflare.steamstatic.com/steam/apps/242760/library_600x900.jpg"
  },
  {
   "external_id": "1326470",
@@ -662,7 +662,7 @@
   "platforms": [
    "Windows"
   ],
-  "cover_url": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1326470/header.jpg?t=1708624856"
+  "cover_url": "https://cdn.cloudflare.steamstatic.com/steam/apps/1326470/library_600x900.jpg"
  },
  {
   "external_id": "252490",
@@ -681,7 +681,7 @@
    "Windows",
    "macOS"
   ],
-  "cover_url": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/252490/header.jpg?t=1781536981"
+  "cover_url": "https://cdn.cloudflare.steamstatic.com/steam/apps/252490/library_600x900.jpg"
  },
  {
   "external_id": "346110",
@@ -700,7 +700,7 @@
    "Windows",
    "macOS"
   ],
-  "cover_url": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/346110/header.jpg?t=1765677889"
+  "cover_url": "https://cdn.cloudflare.steamstatic.com/steam/apps/346110/library_600x900.jpg"
  },
  {
   "external_id": "3240220",
@@ -716,7 +716,7 @@
   "platforms": [
    "Windows"
   ],
-  "cover_url": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/3240220/header.jpg?t=1781187782"
+  "cover_url": "https://cdn.cloudflare.steamstatic.com/steam/apps/3240220/library_600x900.jpg"
  },
  {
   "external_id": "227300",
@@ -733,7 +733,7 @@
    "macOS",
    "Linux"
   ],
-  "cover_url": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/227300/4f6ff00d3732ed0da2e28a4e7182f0036df8ab90/header_alt_assets_8.jpg?t=1790001194"
+  "cover_url": "https://cdn.cloudflare.steamstatic.com/steam/apps/227300/library_600x900.jpg"
  },
  {
   "external_id": "394360",
@@ -750,7 +750,7 @@
    "macOS",
    "Linux"
   ],
-  "cover_url": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/394360/67bbd0057627fc2244793bcdd09260c2539499cf/header.jpg?t=1790873967"
+  "cover_url": "https://cdn.cloudflare.steamstatic.com/steam/apps/394360/library_600x900.jpg"
  },
  {
   "external_id": "281990",
@@ -767,7 +767,7 @@
    "macOS",
    "Linux"
   ],
-  "cover_url": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/281990/a4bbb92c2bbe1f93adf38225b9321a64868099e6/header_alt_assets_14.jpg?t=1790873973"
+  "cover_url": "https://cdn.cloudflare.steamstatic.com/steam/apps/281990/library_600x900.jpg"
  },
  {
   "external_id": "1158310",
@@ -785,7 +785,7 @@
    "macOS",
    "Linux"
   ],
-  "cover_url": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1158310/d1816992fc272424e1b78af38ebb6bc365333d6f/header_alt_assets_13_brazilian.jpg?t=1790873953"
+  "cover_url": "https://cdn.cloudflare.steamstatic.com/steam/apps/1158310/library_600x900.jpg"
  },
  {
   "external_id": "1142710",
@@ -802,7 +802,7 @@
    "macOS",
    "Linux"
   ],
-  "cover_url": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1142710/header.jpg?t=1790321531"
+  "cover_url": "https://cdn.cloudflare.steamstatic.com/steam/apps/1142710/library_600x900.jpg"
  },
  {
   "external_id": "268500",
@@ -818,7 +818,7 @@
    "macOS",
    "Linux"
   ],
-  "cover_url": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/268500/header.jpg?t=1772813016"
+  "cover_url": "https://cdn.cloudflare.steamstatic.com/steam/apps/268500/library_600x900.jpg"
  },
  {
   "external_id": "2868840",
@@ -836,7 +836,7 @@
    "macOS",
    "Linux"
   ],
-  "cover_url": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/2868840/b0958d387dc366211e0f353443710cfcf9fdb020/header.jpg?t=1787169309"
+  "cover_url": "https://cdn.cloudflare.steamstatic.com/steam/apps/2868840/library_600x900.jpg"
  },
  {
   "external_id": "2379780",
@@ -853,7 +853,7 @@
    "Windows",
    "macOS"
   ],
-  "cover_url": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/2379780/7a85430784e4d613cdb0547414d8cf16ffa45747/header.jpg?t=1790693638"
+  "cover_url": "https://cdn.cloudflare.steamstatic.com/steam/apps/2379780/library_600x900.jpg"
  },
  {
   "external_id": "1794680",
@@ -871,7 +871,7 @@
    "Windows",
    "macOS"
   ],
-  "cover_url": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1794680/2ca07b690dde645771125ed9d9206c4c5fde4dd4/header.jpg?t=1787911678"
+  "cover_url": "https://cdn.cloudflare.steamstatic.com/steam/apps/1794680/library_600x900.jpg"
  },
  {
   "external_id": "632360",
@@ -886,7 +886,7 @@
   "platforms": [
    "Windows"
   ],
-  "cover_url": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/632360/header.jpg?t=1783621122"
+  "cover_url": "https://cdn.cloudflare.steamstatic.com/steam/apps/632360/library_600x900.jpg"
  },
  {
   "external_id": "553850",
@@ -900,7 +900,7 @@
   "platforms": [
    "Windows"
   ],
-  "cover_url": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/553850/de5955080cc5e2fa13d0e7b35668ac4e048f7a7e/header_brazilian.jpg?t=1789585784"
+  "cover_url": "https://cdn.cloudflare.steamstatic.com/steam/apps/553850/library_600x900.jpg"
  },
  {
   "external_id": "1966720",
@@ -917,7 +917,7 @@
   "platforms": [
    "Windows"
   ],
-  "cover_url": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1966720/header.jpg?t=1775380053"
+  "cover_url": "https://cdn.cloudflare.steamstatic.com/steam/apps/1966720/library_600x900.jpg"
  },
  {
   "external_id": "3168600",
@@ -931,7 +931,7 @@
   "platforms": [
    "Windows"
   ],
-  "cover_url": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/3168600/23ed05c97630dee1c1b3cbab869d993151adb1fa/header.jpg?t=1775581014"
+  "cover_url": "https://cdn.cloudflare.steamstatic.com/steam/apps/3168600/library_600x900.jpg"
  },
  {
   "external_id": "440",
@@ -947,7 +947,7 @@
    "Windows",
    "Linux"
   ],
-  "cover_url": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/440/header.jpg?t=1757348372"
+  "cover_url": "https://cdn.cloudflare.steamstatic.com/steam/apps/440/library_600x900.jpg"
  },
  {
   "external_id": "1085660",
@@ -963,7 +963,7 @@
   "platforms": [
    "Windows"
   ],
-  "cover_url": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1085660/0ccf0dc0a8c4ec078db7ab99ddc820b2fa884441/header.jpg?t=1781815889"
+  "cover_url": "https://cdn.cloudflare.steamstatic.com/steam/apps/1085660/library_600x900.jpg"
  },
  {
   "external_id": "230410",
@@ -979,7 +979,7 @@
   "platforms": [
    "Windows"
   ],
-  "cover_url": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/230410/1a3e7c2a05ce4e5cad5ac4c7e858cf5b0934704e/header.jpg?t=1790176468"
+  "cover_url": "https://cdn.cloudflare.steamstatic.com/steam/apps/230410/library_600x900.jpg"
  },
  {
   "external_id": "2694490",
@@ -997,7 +997,7 @@
   "platforms": [
    "Windows"
   ],
-  "cover_url": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/2694490/24eeddcbda17903f03d819588757e40845f8115f/header.jpg?t=1787697213"
+  "cover_url": "https://cdn.cloudflare.steamstatic.com/steam/apps/2694490/library_600x900.jpg"
  },
  {
   "external_id": "1092790",
@@ -1015,7 +1015,7 @@
    "macOS",
    "Linux"
   ],
-  "cover_url": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1092790/header.jpg?t=1777572925"
+  "cover_url": "https://cdn.cloudflare.steamstatic.com/steam/apps/1092790/library_600x900.jpg"
  },
  {
   "external_id": "753640",
@@ -1030,7 +1030,7 @@
   "platforms": [
    "Windows"
   ],
-  "cover_url": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/753640/079ae4a7ff4b5875adc5c63c4c0b84e5a3e6966b/header.jpg?t=1785424341"
+  "cover_url": "https://cdn.cloudflare.steamstatic.com/steam/apps/753640/library_600x900.jpg"
  },
  {
   "external_id": "653530",
@@ -1046,7 +1046,7 @@
    "Windows",
    "macOS"
   ],
-  "cover_url": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/653530/header.jpg?t=1686697594"
+  "cover_url": "https://cdn.cloudflare.steamstatic.com/steam/apps/653530/library_600x900.jpg"
  },
  {
   "external_id": "383870",
@@ -1063,7 +1063,7 @@
    "macOS",
    "Linux"
   ],
-  "cover_url": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/383870/41a7d0ff4c2dab4ed69c53c9a29c931e6f62948d/header.jpg?t=1755789801"
+  "cover_url": "https://cdn.cloudflare.steamstatic.com/steam/apps/383870/library_600x900.jpg"
  },
  {
   "external_id": "48000",
@@ -1080,7 +1080,7 @@
    "Windows",
    "macOS"
   ],
-  "cover_url": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/48000/header.jpg?t=1761819450"
+  "cover_url": "https://cdn.cloudflare.steamstatic.com/steam/apps/48000/library_600x900.jpg"
  },
  {
   "external_id": "1987080",
@@ -1096,7 +1096,7 @@
   "platforms": [
    "Windows"
   ],
-  "cover_url": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1987080/51dab996a62cacdc321c349b5f6268b6ddf5000d/header.jpg?t=1782677111"
+  "cover_url": "https://cdn.cloudflare.steamstatic.com/steam/apps/1987080/library_600x900.jpg"
  },
  {
   "external_id": "424840",
@@ -1110,7 +1110,7 @@
   "platforms": [
    "Windows"
   ],
-  "cover_url": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/424840/facf9a7a675c6d7f210d96d6b111caffe0386cd5/header.jpg?t=1773135169"
+  "cover_url": "https://cdn.cloudflare.steamstatic.com/steam/apps/424840/library_600x900.jpg"
  },
  {
   "external_id": "219150",
@@ -1127,7 +1127,7 @@
    "macOS",
    "Linux"
   ],
-  "cover_url": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/219150/header.jpg?t=1785434922"
+  "cover_url": "https://cdn.cloudflare.steamstatic.com/steam/apps/219150/library_600x900.jpg"
  },
  {
   "external_id": "460950",
@@ -1143,7 +1143,7 @@
    "Windows",
    "macOS"
   ],
-  "cover_url": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/460950/header.jpg?t=1761066027"
+  "cover_url": "https://cdn.cloudflare.steamstatic.com/steam/apps/460950/library_600x900.jpg"
  },
  {
   "external_id": "1057090",
@@ -1157,7 +1157,7 @@
   "platforms": [
    "Windows"
   ],
-  "cover_url": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1057090/header.jpg?t=1759530749"
+  "cover_url": "https://cdn.cloudflare.steamstatic.com/steam/apps/1057090/library_600x900.jpg"
  },
  {
   "external_id": "261570",
@@ -1171,7 +1171,7 @@
   "platforms": [
    "Windows"
   ],
-  "cover_url": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/261570/header.jpg?t=1667504148"
+  "cover_url": "https://cdn.cloudflare.steamstatic.com/steam/apps/261570/library_600x900.jpg"
  },
  {
   "external_id": "581660",
@@ -1187,7 +1187,7 @@
   "platforms": [
    "Windows"
   ],
-  "cover_url": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/581660/header.jpg?t=1641929185"
+  "cover_url": "https://cdn.cloudflare.steamstatic.com/steam/apps/581660/library_600x900.jpg"
  },
  {
   "external_id": "418530",
@@ -1202,7 +1202,7 @@
   "platforms": [
    "Windows"
   ],
-  "cover_url": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/418530/header.jpg?t=1663719294"
+  "cover_url": "https://cdn.cloudflare.steamstatic.com/steam/apps/418530/library_600x900.jpg"
  },
  {
   "external_id": "683320",
@@ -1218,7 +1218,7 @@
    "Windows",
    "macOS"
   ],
-  "cover_url": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/683320/header.jpg?t=1759429603"
+  "cover_url": "https://cdn.cloudflare.steamstatic.com/steam/apps/683320/library_600x900.jpg"
  },
  {
   "external_id": "1172620",
@@ -1233,7 +1233,7 @@
   "platforms": [
    "Windows"
   ],
-  "cover_url": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1172620/579c6d544424019a032f4add98e8f923925c1cef/header.jpg?t=1789650456"
+  "cover_url": "https://cdn.cloudflare.steamstatic.com/steam/apps/1172620/library_600x900.jpg"
  },
  {
   "external_id": "275850",
@@ -1249,7 +1249,7 @@
    "Windows",
    "macOS"
   ],
-  "cover_url": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/275850/2c6e38b43a5309dfcd3cc0f0134e222b0fa2d1b1/header_alt_assets_25.jpg?t=1789479023"
+  "cover_url": "https://cdn.cloudflare.steamstatic.com/steam/apps/275850/library_600x900.jpg"
  },
  {
   "external_id": "397540",
@@ -1264,7 +1264,7 @@
   "platforms": [
    "Windows"
   ],
-  "cover_url": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/397540/header.jpg?t=1750802377"
+  "cover_url": "https://cdn.cloudflare.steamstatic.com/steam/apps/397540/library_600x900.jpg"
  },
  {
   "external_id": "750920",
@@ -1281,7 +1281,7 @@
    "macOS",
    "Linux"
   ],
-  "cover_url": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/750920/header.jpg?t=1765239925"
+  "cover_url": "https://cdn.cloudflare.steamstatic.com/steam/apps/750920/library_600x900.jpg"
  },
  {
   "external_id": "2208920",
@@ -1297,7 +1297,7 @@
   "platforms": [
    "Windows"
   ],
-  "cover_url": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/2208920/header.jpg?t=1786637382"
+  "cover_url": "https://cdn.cloudflare.steamstatic.com/steam/apps/2208920/library_600x900.jpg"
  },
  {
   "external_id": "812140",
@@ -1313,7 +1313,7 @@
   "platforms": [
    "Windows"
   ],
-  "cover_url": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/812140/header.jpg?t=1786633104"
+  "cover_url": "https://cdn.cloudflare.steamstatic.com/steam/apps/812140/library_600x900.jpg"
  },
  {
   "external_id": "552520",
@@ -1328,7 +1328,7 @@
   "platforms": [
    "Windows"
   ],
-  "cover_url": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/552520/0dbbd22689fafc2b5b86996257a8e115ff935e81/header.jpg?t=1785365694"
+  "cover_url": "https://cdn.cloudflare.steamstatic.com/steam/apps/552520/library_600x900.jpg"
  },
  {
   "external_id": "412020",
@@ -1344,7 +1344,7 @@
    "macOS",
    "Linux"
   ],
-  "cover_url": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/412020/header.jpg?t=1750772804"
+  "cover_url": "https://cdn.cloudflare.steamstatic.com/steam/apps/412020/library_600x900.jpg"
  },
  {
   "external_id": "8870",
@@ -1360,7 +1360,7 @@
    "macOS",
    "Linux"
   ],
-  "cover_url": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/8870/header.jpg?t=1728673518"
+  "cover_url": "https://cdn.cloudflare.steamstatic.com/steam/apps/8870/library_600x900.jpg"
  },
  {
   "external_id": "480490",
@@ -1375,7 +1375,7 @@
   "platforms": [
    "Windows"
   ],
-  "cover_url": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/480490/9ed715575a2205350e937e5e6d25b3e8a494605e/header.jpg?t=1784141088"
+  "cover_url": "https://cdn.cloudflare.steamstatic.com/steam/apps/480490/library_600x900.jpg"
  },
  {
   "external_id": "337000",
@@ -1392,7 +1392,7 @@
    "macOS",
    "Linux"
   ],
-  "cover_url": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/337000/39cf848b5d93541865bdf81e1f415cc615de5d80/header.jpg?t=1780670420"
+  "cover_url": "https://cdn.cloudflare.steamstatic.com/steam/apps/337000/library_600x900.jpg"
  },
  {
   "external_id": "208650",
@@ -1407,7 +1407,7 @@
   "platforms": [
    "Windows"
   ],
-  "cover_url": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/208650/header.jpg?t=1745534372"
+  "cover_url": "https://cdn.cloudflare.steamstatic.com/steam/apps/208650/library_600x900.jpg"
  },
  {
   "external_id": "1817070",
@@ -1423,7 +1423,7 @@
   "platforms": [
    "Windows"
   ],
-  "cover_url": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1817070/header.jpg?t=1787838689"
+  "cover_url": "https://cdn.cloudflare.steamstatic.com/steam/apps/1817070/library_600x900.jpg"
  },
  {
   "external_id": "1593500",
@@ -1439,7 +1439,7 @@
   "platforms": [
    "Windows"
   ],
-  "cover_url": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1593500/header.jpg?t=1763059412"
+  "cover_url": "https://cdn.cloudflare.steamstatic.com/steam/apps/1593500/library_600x900.jpg"
  },
  {
   "external_id": "2561580",
@@ -1455,7 +1455,7 @@
   "platforms": [
    "Windows"
   ],
-  "cover_url": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/2561580/header.jpg?t=1750952943"
+  "cover_url": "https://cdn.cloudflare.steamstatic.com/steam/apps/2561580/library_600x900.jpg"
  },
  {
   "external_id": "1259420",
@@ -1470,7 +1470,7 @@
   "platforms": [
    "Windows"
   ],
-  "cover_url": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1259420/header.jpg?t=1750947718"
+  "cover_url": "https://cdn.cloudflare.steamstatic.com/steam/apps/1259420/library_600x900.jpg"
  },
  {
   "external_id": "2215430",
@@ -1485,7 +1485,7 @@
   "platforms": [
    "Windows"
   ],
-  "cover_url": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/2215430/header.jpg?t=1763409398"
+  "cover_url": "https://cdn.cloudflare.steamstatic.com/steam/apps/2215430/library_600x900.jpg"
  },
  {
   "external_id": "1888930",
@@ -1500,7 +1500,7 @@
   "platforms": [
    "Windows"
   ],
-  "cover_url": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1888930/header.jpg?t=1750959031"
+  "cover_url": "https://cdn.cloudflare.steamstatic.com/steam/apps/1888930/library_600x900.jpg"
  },
  {
   "external_id": "990080",
@@ -1516,7 +1516,7 @@
   "platforms": [
    "Windows"
   ],
-  "cover_url": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/990080/be2971b1023bccb04f993887d70ef4d2060262cf/header.jpg?t=1790708992"
+  "cover_url": "https://cdn.cloudflare.steamstatic.com/steam/apps/990080/library_600x900.jpg"
  },
  {
   "external_id": "1623730",
@@ -1533,7 +1533,7 @@
   "platforms": [
    "Windows"
   ],
-  "cover_url": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1623730/6912f19c43a95ff5fe514eedd35e68bf12335459/header.jpg?t=1790336367"
+  "cover_url": "https://cdn.cloudflare.steamstatic.com/steam/apps/1623730/library_600x900.jpg"
  },
  {
   "external_id": "2358720",
@@ -1549,7 +1549,7 @@
   "platforms": [
    "Windows"
   ],
-  "cover_url": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/2358720/header.jpg?t=1760601605"
+  "cover_url": "https://cdn.cloudflare.steamstatic.com/steam/apps/2358720/library_600x900.jpg"
  },
  {
   "external_id": "1627720",
@@ -1566,7 +1566,7 @@
    "Windows",
    "macOS"
   ],
-  "cover_url": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1627720/header.jpg?t=1764565054"
+  "cover_url": "https://cdn.cloudflare.steamstatic.com/steam/apps/1627720/library_600x900.jpg"
  },
  {
   "external_id": "1888160",
@@ -1580,7 +1580,7 @@
   "platforms": [
    "Windows"
   ],
-  "cover_url": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1888160/header.jpg?t=1748630736"
+  "cover_url": "https://cdn.cloudflare.steamstatic.com/steam/apps/1888160/library_600x900.jpg"
  },
  {
   "external_id": "2138710",
@@ -1595,7 +1595,7 @@
   "platforms": [
    "Windows"
   ],
-  "cover_url": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/2138710/header.jpg?t=1782742326"
+  "cover_url": "https://cdn.cloudflare.steamstatic.com/steam/apps/2138710/library_600x900.jpg"
  },
  {
   "external_id": "1868140",
@@ -1613,7 +1613,7 @@
    "Windows",
    "macOS"
   ],
-  "cover_url": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1868140/81bdb3bce15d27ca1b4554a642d91096e89be229/header.jpg?t=1789456375"
+  "cover_url": "https://cdn.cloudflare.steamstatic.com/steam/apps/1868140/library_600x900.jpg"
  },
  {
   "external_id": "1313140",
@@ -1631,7 +1631,7 @@
    "Windows",
    "macOS"
   ],
-  "cover_url": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1313140/19f32bb477a6e9d058e05193b4e282149bd70644/header.jpg?t=1786554901"
+  "cover_url": "https://cdn.cloudflare.steamstatic.com/steam/apps/1313140/library_600x900.jpg"
  },
  {
   "external_id": "1817230",
@@ -1645,7 +1645,7 @@
   "platforms": [
    "Windows"
   ],
-  "cover_url": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1817230/header.jpg?t=1764916407"
+  "cover_url": "https://cdn.cloudflare.steamstatic.com/steam/apps/1817230/library_600x900.jpg"
  },
  {
   "external_id": "553420",
@@ -1662,7 +1662,7 @@
    "Windows",
    "macOS"
   ],
-  "cover_url": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/553420/header.jpg?t=1783359656"
+  "cover_url": "https://cdn.cloudflare.steamstatic.com/steam/apps/553420/library_600x900.jpg"
  },
  {
   "external_id": "2231450",
@@ -1677,7 +1677,7 @@
   "platforms": [
    "Windows"
   ],
-  "cover_url": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/2231450/header.jpg?t=1732516978"
+  "cover_url": "https://cdn.cloudflare.steamstatic.com/steam/apps/2231450/library_600x900.jpg"
  },
  {
   "external_id": "1562430",
@@ -1693,7 +1693,7 @@
    "Windows",
    "macOS"
   ],
-  "cover_url": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1562430/header.jpg?t=1780479732"
+  "cover_url": "https://cdn.cloudflare.steamstatic.com/steam/apps/1562430/library_600x900.jpg"
  },
  {
   "external_id": "1144200",
@@ -1709,7 +1709,7 @@
   "platforms": [
    "Windows"
   ],
-  "cover_url": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1144200/2b44644b033a996a9efb95051bb01809215d0d23/header.jpg?t=1790846188"
+  "cover_url": "https://cdn.cloudflare.steamstatic.com/steam/apps/1144200/library_600x900.jpg"
  },
  {
   "external_id": "739630",
@@ -1725,7 +1725,7 @@
   "platforms": [
    "Windows"
   ],
-  "cover_url": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/739630/c227a2855aba60f3657bc0c3a46515b8c41fb2b6/header.jpg?t=1789487643"
+  "cover_url": "https://cdn.cloudflare.steamstatic.com/steam/apps/739630/library_600x900.jpg"
  },
  {
   "external_id": "1332010",
@@ -1741,7 +1741,7 @@
    "Windows",
    "macOS"
   ],
-  "cover_url": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1332010/71daca1910d664d31240b9623a495e0c0828807f/header.jpg?t=1785424330"
+  "cover_url": "https://cdn.cloudflare.steamstatic.com/steam/apps/1332010/library_600x900.jpg"
  },
  {
   "external_id": "837470",
@@ -1757,7 +1757,7 @@
    "Windows",
    "macOS"
   ],
-  "cover_url": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/837470/header.jpg?t=1699052664"
+  "cover_url": "https://cdn.cloudflare.steamstatic.com/steam/apps/837470/library_600x900.jpg"
  },
  {
   "external_id": "1426210",
@@ -1772,7 +1772,7 @@
   "platforms": [
    "Windows"
   ],
-  "cover_url": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1426210/header_brazilian.jpg?t=1777395376"
+  "cover_url": "https://cdn.cloudflare.steamstatic.com/steam/apps/1426210/library_600x900.jpg"
  },
  {
   "external_id": "728880",
@@ -1790,7 +1790,7 @@
    "macOS",
    "Linux"
   ],
-  "cover_url": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/728880/9305414f49b2f7aee7f7198dc507d6b66383fdd6/header.jpg?t=1789548883"
+  "cover_url": "https://cdn.cloudflare.steamstatic.com/steam/apps/728880/library_600x900.jpg"
  },
  {
   "external_id": "477160",
@@ -1808,7 +1808,7 @@
    "Windows",
    "macOS"
   ],
-  "cover_url": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/477160/b16de9cf3f8e40c23a3587809578fd36aa7f7efd/header_alt_assets_27_brazilian.jpg?t=1789479416"
+  "cover_url": "https://cdn.cloudflare.steamstatic.com/steam/apps/477160/library_600x900.jpg"
  },
  {
   "external_id": "1003590",
@@ -1823,7 +1823,7 @@
   "platforms": [
    "Windows"
   ],
-  "cover_url": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1003590/11d98bbb08ca8e16d015ae4a40b60920ae8dbe36/header.jpg?t=1774036904"
+  "cover_url": "https://cdn.cloudflare.steamstatic.com/steam/apps/1003590/library_600x900.jpg"
  },
  {
   "external_id": "3219030",
@@ -1855,7 +1855,7 @@
    "macOS",
    "Linux"
   ],
-  "cover_url": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/535930/header.jpg?t=1763648286"
+  "cover_url": "https://cdn.cloudflare.steamstatic.com/steam/apps/535930/library_600x900.jpg"
  },
  {
   "external_id": "1601580",
@@ -1871,7 +1871,7 @@
    "Windows",
    "macOS"
   ],
-  "cover_url": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1601580/header.jpg?t=1788264833"
+  "cover_url": "https://cdn.cloudflare.steamstatic.com/steam/apps/1601580/library_600x900.jpg"
  },
  {
   "external_id": "261550",
@@ -1889,7 +1889,7 @@
   "platforms": [
    "Windows"
   ],
-  "cover_url": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/261550/header.jpg?t=1764252300"
+  "cover_url": "https://cdn.cloudflare.steamstatic.com/steam/apps/261550/library_600x900.jpg"
  },
  {
   "external_id": "1771300",
@@ -1905,7 +1905,7 @@
   "platforms": [
    "Windows"
   ],
-  "cover_url": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1771300/header.jpg?t=1777975568"
+  "cover_url": "https://cdn.cloudflare.steamstatic.com/steam/apps/1771300/library_600x900.jpg"
  },
  {
   "external_id": "2054970",
@@ -1920,7 +1920,7 @@
   "platforms": [
    "Windows"
   ],
-  "cover_url": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/2054970/header.jpg?t=1788308490"
+  "cover_url": "https://cdn.cloudflare.steamstatic.com/steam/apps/2054970/library_600x900.jpg"
  },
  {
   "external_id": "570940",
@@ -1934,7 +1934,7 @@
   "platforms": [
    "Windows"
   ],
-  "cover_url": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/570940/header.jpg?t=1778518110"
+  "cover_url": "https://cdn.cloudflare.steamstatic.com/steam/apps/570940/library_600x900.jpg"
  },
  {
   "external_id": "1657630",
@@ -1952,7 +1952,7 @@
   "platforms": [
    "Windows"
   ],
-  "cover_url": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1657630/1b9ea5d7833fb27a0e18223bba224b6bfd7ec936/header_alt_assets_8.jpg?t=1790096620"
+  "cover_url": "https://cdn.cloudflare.steamstatic.com/steam/apps/1657630/library_600x900.jpg"
  },
  {
   "external_id": "648800",
@@ -1968,7 +1968,7 @@
   "platforms": [
    "Windows"
   ],
-  "cover_url": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/648800/header.jpg?t=1727184011"
+  "cover_url": "https://cdn.cloudflare.steamstatic.com/steam/apps/648800/library_600x900.jpg"
  },
  {
   "external_id": "815370",
@@ -1985,7 +1985,7 @@
   "platforms": [
    "Windows"
   ],
-  "cover_url": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/815370/header.jpg?t=1783077147"
+  "cover_url": "https://cdn.cloudflare.steamstatic.com/steam/apps/815370/library_600x900.jpg"
  },
  {
   "external_id": "305620",
@@ -2004,7 +2004,7 @@
    "macOS",
    "Linux"
   ],
-  "cover_url": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/305620/6c82ea1073946b0e83974a0ae6bd9d29d93911f9/header.jpg?t=1785448287"
+  "cover_url": "https://cdn.cloudflare.steamstatic.com/steam/apps/305620/library_600x900.jpg"
  },
  {
   "external_id": "220200",
@@ -2021,7 +2021,7 @@
    "macOS",
    "Linux"
   ],
-  "cover_url": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/220200/header.jpg?t=1738037585"
+  "cover_url": "https://cdn.cloudflare.steamstatic.com/steam/apps/220200/library_600x900.jpg"
  },
  {
   "external_id": "546560",
@@ -2036,7 +2036,7 @@
   "platforms": [
    "Windows"
   ],
-  "cover_url": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/546560/header.jpg?t=1790202165"
+  "cover_url": "https://cdn.cloudflare.steamstatic.com/steam/apps/546560/library_600x900.jpg"
  },
  {
   "external_id": "578080",
@@ -2053,7 +2053,7 @@
   "platforms": [
    "Windows"
   ],
-  "cover_url": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/578080/841ea38bc58cabb70aef65365cf50bc2d79329d9/header.jpg?t=1786493086"
+  "cover_url": "https://cdn.cloudflare.steamstatic.com/steam/apps/578080/library_600x900.jpg"
  },
  {
   "external_id": "359550",
@@ -2068,7 +2068,7 @@
   "platforms": [
    "Windows"
   ],
-  "cover_url": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/359550/6b69a8d5ac8d0542bba5c735a8bcc5bb33cda42e/header_alt_assets_25.jpg?t=1790952963"
+  "cover_url": "https://cdn.cloudflare.steamstatic.com/steam/apps/359550/library_600x900.jpg"
  },
  {
   "external_id": "1253920",
@@ -2087,7 +2087,7 @@
    "macOS",
    "Linux"
   ],
-  "cover_url": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1253920/header.jpg?t=1710829748"
+  "cover_url": "https://cdn.cloudflare.steamstatic.com/steam/apps/1253920/library_600x900.jpg"
  },
  {
   "external_id": "1346020",
@@ -2101,7 +2101,7 @@
   "platforms": [
    "Windows"
   ],
-  "cover_url": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1346020/570c477cc6974111b81827e919e20fdbf5c448d6/header.jpg?t=1776704456"
+  "cover_url": "https://cdn.cloudflare.steamstatic.com/steam/apps/1346020/library_600x900.jpg"
  },
  {
   "external_id": "590380",
@@ -2120,7 +2120,7 @@
    "macOS",
    "Linux"
   ],
-  "cover_url": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/590380/header.jpg?t=1755610784"
+  "cover_url": "https://cdn.cloudflare.steamstatic.com/steam/apps/590380/library_600x900.jpg"
  },
  {
   "external_id": "212680",
@@ -2138,7 +2138,7 @@
    "macOS",
    "Linux"
   ],
-  "cover_url": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/212680/f21426ac9ad51338fa33becce88984758e07c38b/header.jpg?t=1748969356"
+  "cover_url": "https://cdn.cloudflare.steamstatic.com/steam/apps/212680/library_600x900.jpg"
  },
  {
   "external_id": "239030",
@@ -2155,7 +2155,7 @@
    "macOS",
    "Linux"
   ],
-  "cover_url": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/239030/header.jpg?t=1678266428"
+  "cover_url": "https://cdn.cloudflare.steamstatic.com/steam/apps/239030/library_600x900.jpg"
  },
  {
   "external_id": "457140",
@@ -2172,7 +2172,7 @@
    "macOS",
    "Linux"
   ],
-  "cover_url": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/457140/header.jpg?t=1790785089"
+  "cover_url": "https://cdn.cloudflare.steamstatic.com/steam/apps/457140/library_600x900.jpg"
  },
  {
   "external_id": "219740",
@@ -2190,7 +2190,7 @@
    "macOS",
    "Linux"
   ],
-  "cover_url": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/219740/88641e235d75934ea9f7ed4e947edfd9da682732/header.jpg?t=1790876891"
+  "cover_url": "https://cdn.cloudflare.steamstatic.com/steam/apps/219740/library_600x900.jpg"
  },
  {
   "external_id": "1703340",
@@ -2208,7 +2208,7 @@
    "macOS",
    "Linux"
   ],
-  "cover_url": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1703340/header.jpg?t=1712065263"
+  "cover_url": "https://cdn.cloudflare.steamstatic.com/steam/apps/1703340/library_600x900.jpg"
  },
  {
   "external_id": "617830",
@@ -2223,7 +2223,7 @@
   "platforms": [
    "Windows"
   ],
-  "cover_url": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/617830/header.jpg?t=1789468028"
+  "cover_url": "https://cdn.cloudflare.steamstatic.com/steam/apps/617830/library_600x900.jpg"
  },
  {
   "external_id": "3454910",
@@ -2239,7 +2239,7 @@
   "platforms": [
    "Windows"
   ],
-  "cover_url": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/3454910/header.jpg?t=1752715985"
+  "cover_url": "https://cdn.cloudflare.steamstatic.com/steam/apps/3454910/library_600x900.jpg"
  },
  {
   "external_id": "1927720",
@@ -2256,6 +2256,6 @@
   "platforms": [
    "Windows"
   ],
-  "cover_url": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1927720/45a4e828b5d2e3bd4068c68bae0a41c745a5e2dc/header.jpg?t=1762967584"
+  "cover_url": "https://cdn.cloudflare.steamstatic.com/steam/apps/1927720/library_600x900.jpg"
  }
 ]

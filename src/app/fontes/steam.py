@@ -5,12 +5,30 @@ import re
 import unicodedata
 from datetime import date
 from urllib.parse import quote
-from urllib.request import urlopen
+from urllib.request import Request, urlopen
 
 LOJA = "https://store.steampowered.com/api"
 MESES = {m: i for i, m in enumerate("jan feb fev mar apr abr may mai jun jul aug ago sep set oct out nov dec dez".split(), 1)}
 MESES.update(feb=2, fev=2, apr=4, abr=4, may=5, mai=5, aug=8, ago=8, sep=9, set=9, oct=10, out=10, dec=12, dez=12)
 PLATAFORMAS = {"windows": "Windows", "mac": "macOS", "linux": "Linux"}
+
+
+VERTICAL = "https://cdn.cloudflare.steamstatic.com/steam/apps/{}/library_600x900.jpg"
+
+
+def _existe(url):
+    """HEAD 200 com content-type de imagem; qualquer falha conta como inexistente (CAP-02)."""
+    try:
+        with urlopen(Request(url, method="HEAD"), timeout=10) as r:
+            return r.status == 200 and r.headers.get("content-type", "").startswith("image")
+    except Exception:
+        return False
+
+
+def capa(appid, horizontal):
+    """Capa vertical (3:4, combina com os cartões) se existir; senão a horizontal da loja (CAP-01, CAP-02)."""
+    url = VERTICAL.format(appid)
+    return url if _existe(url) else horizontal
 
 
 def _get(path):
@@ -53,7 +71,7 @@ def _jogo(appid):
         "developer": (d.get("developers") or [""])[0],
         "genres": [g["description"] for g in d.get("genres", [])],
         "platforms": [n for k, n in PLATAFORMAS.items() if d.get("platforms", {}).get(k)],
-        "cover_url": d.get("header_image"),
+        "cover_url": capa(appid, d.get("header_image")),
     }
 
 
