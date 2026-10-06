@@ -4,9 +4,9 @@ Catálogo de jogos com avaliações, listas/status (wishlist = "planejado"), fee
 Desenvolvido com **Spec-Driven Development**: cada parte tem uma spec datada em [`SPEC/`](SPEC/), commitada antes do código.
 
 - **URL pública:** https://gamelog-r41f.onrender.com
-- **Equipe:** Artur ([@arturgomesc](https://github.com/arturgomesc)) — implementação · Fernanda Borges ([@fenalk](https://github.com/fenalk)) — specs
+- **Equipe:** Artur ([@arturgomesc](https://github.com/arturgomesc)) — implementação · Fernanda Borges ([@fenalk](https://github.com/fenalk)) — specs e visual dos botões
 - **Stack:** Python 3.12+, Flask 3, Flask-SQLAlchemy (SQLite), Jinja2, pytest, gunicorn. Sem JS de build, sem serviços externos.
-- **Ferramentas/modelos de IA:** Claude Code — Opus 5.5 (planejamento) e Sonnet 5.5 (implementação). Sessões brutas em [`prompts/sessoes/`](prompts/sessoes/).
+- **Ferramentas/modelos de IA:** Claude Code — Opus 5.5 (planejamento) e Sonnet 5.5 (implementação). Fernanda: Copilot no VS Code (sessão de 06/10, registrada em `prompts/sessoes/2026-10-06-1750-copilot.md`). Sessões em [`prompts/sessoes/`](prompts/sessoes/).
 
 ## Como rodar
 
@@ -19,7 +19,7 @@ python -m venv .venv && . .venv/bin/activate
 pip install -r requirements.txt
 cd src
 export ADMIN_EMAIL=admin@example.com ADMIN_PASSWORD=<senha>   # ver .env.example
-flask --app app seed        # 149 jogos reais (snapshot da Steam), 30 usuários fictícios com avaliações em ~30 jogos (senha: senha1234)
+flask --app app seed        # 153 jogos reais (snapshot da Steam), 30 usuários fictícios com avaliações em ~30 jogos (senha: senha1234)
 flask --app app run
 cd .. && pytest             # 166 testes, um ou mais por critério de aceitação
 ```
@@ -43,6 +43,7 @@ Variáveis: `SECRET_KEY` (gerada), `ADMIN_EMAIL`, `ADMIN_PASSWORD`.
 | recomendacoes (REC-01..09) | `recomendacoes.py` | `tests/test_recomendacoes.py` |
 | painel-admin (ADM-01..10) | `admin.py` | `tests/test_admin.py` |
 | importacao-steam (IMP-01..09) | `fontes/`, `cli.py` | `tests/test_importacao.py` |
+| botões (BTN-01..11) | `static/style.css`, `templates/base.html` | sem testes automatizados (spec só visual) |
 | api-json (API-01..10) | `api.py` | `tests/test_api.py` |
 | capas-verticais (CAP-01..05) | `fontes/steam.py`, `dados/jogos.json` | `tests/test_capas.py` |
 | recomendacoes-colaborativas (COL-01..08) | `recomendacoes.py` | `tests/test_recomendacoes_colab.py` |
