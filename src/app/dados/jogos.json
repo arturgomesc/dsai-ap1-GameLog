@@ -182,6 +182,21 @@
   "cover_url": "https://cdn.cloudflare.steamstatic.com/steam/apps/620/library_600x900.jpg"
  },
  {
+  "external_id": "220",
+  "title": "Half-Life 2",
+  "synopsis": "Depois de despertar de um estado de estase na metrópole ocupada conhecida como Cidade 17, Gordon Freeman junta-se a Alyx Vance, que lidera o desesperado movimento de resistência humana. Experimente o jogo de tiro em primeira pessoa que serviu como ponto de referência, recheado de níveis sem precedentes de exposição imersiva ao mundo, uma...",
+  "release_date": "2004-11-16",
+  "developer": "Valve",
+  "genres": [
+   "Ação"
+  ],
+  "platforms": [
+   "Windows",
+   "Linux"
+  ],
+  "cover_url": "https://cdn.cloudflare.steamstatic.com/steam/apps/220/library_600x900.jpg"
+ },
+ {
   "external_id": "730",
   "title": "Counter-Strike 2",
   "synopsis": "Há mais de duas décadas, o Counter-Strike oferece uma experiência competitiva de elite moldada por milhões de jogadores mundialmente. Agora, o próximo capítulo da história do CS vai começar. Isso é Counter-Strike 2.",
@@ -201,7 +216,7 @@
   "external_id": "570",
   "title": "Dota 2",
   "synopsis": "Diariamente, milhões de jogadores mundo afora batalham como um dentre os mais de cem heróis do Dota. Estejam jogando há 10 ou 1.000 horas, há sempre algo novo para descobrir. Com atualizações constantes das mecânicas, recursos e heróis, o Dota 2 se tornou mais que um simples jogo.",
-  "release_date": "2013-10-09",
+  "release_date": "2013-07-09",
   "developer": "Valve",
   "genres": [
    "Ação",
@@ -214,6 +229,21 @@
    "Linux"
   ],
   "cover_url": "https://cdn.cloudflare.steamstatic.com/steam/apps/570/library_600x900.jpg"
+ },
+ {
+  "external_id": "550",
+  "title": "Left 4 Dead 2",
+  "synopsis": "Set in the zombie apocalypse, Left 4 Dead 2 is a co-operative action horror FPS takes you and your friends through the cities, swamps and cemeteries of the Deep South, from Savannah to New Orleans across five expansive campaigns.",
+  "release_date": "2009-11-16",
+  "developer": "Valve",
+  "genres": [
+   "Ação"
+  ],
+  "platforms": [
+   "Windows",
+   "Linux"
+  ],
+  "cover_url": "https://cdn.cloudflare.steamstatic.com/steam/apps/550/library_600x900.jpg"
  },
  {
   "external_id": "374320",
@@ -233,7 +263,7 @@
   "external_id": "814380",
   "title": "Sekiro™: Shadows Die Twice - GOTY Edition",
   "synopsis": "Jogo do Ano - The Game Awards 2019 Melhor Jogo de Ação de 2019 - IGN Trilhe seu próprio caminho de vingança nesta premiada aventura da FromSoftware, os criadores de Bloodborne e da franquia Dark Souls. Obtenha vingança. Retome sua honra. Mate astuciosamente.",
-  "release_date": "2019-04-21",
+  "release_date": "2019-03-21",
   "developer": "FromSoftware, Inc.",
   "genres": [
    "Ação",
@@ -248,7 +278,7 @@
   "external_id": "2050650",
   "title": "Resident Evil 4",
   "synopsis": "Sobrevivência é apenas o começo. Seis anos se passaram desde o desastre biológico em Raccoon City. Leon S. Kennedy, um dos sobreviventes, segue o rastro da raptada filha do presidente até uma vila europeia isolada, onde há algo terrivelmente errado com os habitantes.",
-  "release_date": "2023-04-23",
+  "release_date": "2023-03-23",
   "developer": "CAPCOM Co., Ltd.",
   "genres": [
    "Ação",
@@ -359,7 +389,7 @@
   "external_id": "3280350",
   "title": "DEATH STRANDING 2: ON THE BEACH",
   "synopsis": "Com companheiros ao seu lado, Sam inicia uma nova jornada para salvar a humanidade da extinção. Junte-se a eles na viagem por um mundo problemático repleto de inimigos sobrenaturais, obstáculos e uma dúvida inquietante: deveríamos ter nos conectado?",
-  "release_date": "2026-04-19",
+  "release_date": "2026-03-19",
   "developer": "KOJIMA PRODUCTIONS",
   "genres": [
    "Ação",
@@ -374,7 +404,7 @@
   "external_id": "782330",
   "title": "DOOM Eternal",
   "synopsis": "Os exércitos do Inferno invadiram a Terra. Torne-se o Slayer em uma campanha épica para um jogador e derrote demônios entre dimensões para impedir a derradeira destruição da humanidade. A única coisa que eles temem... é você.",
-  "release_date": "2020-04-19",
+  "release_date": "2020-03-19",
   "developer": "id Software",
   "genres": [
    "Ação"
@@ -385,10 +415,10 @@
   "cover_url": "https://cdn.cloudflare.steamstatic.com/steam/apps/782330/library_600x900.jpg"
  },
  {
-  "external_id": "611660",
-  "title": "Fallout 4 VR",
-  "synopsis": "Fallout 4, o épico jogo pós-apocalíptico da Bethesda Game Studios e vencedor de mais de 200 prêmios, incluindo Jogo do Ano da DICE e do BAFTA, está entrando por inteiro no mundo da realidade virtual.",
-  "release_date": "2017-12-11",
+  "external_id": "377160",
+  "title": "Fallout 4",
+  "synopsis": "A Bethesda Game Studios, criadora premiada de Starfield e The Elder Scrolls V: Skyrim, também criou Fallout 4. Um marco no design de RPGs de mundo aberto e vencedor de mais de 200 prêmios de Melhor Jogo em várias categorias, incluindo o Jogo do Ano da DICE e do BAFTA.",
+  "release_date": "2015-11-09",
   "developer": "Bethesda Game Studios",
   "genres": [
    "RPG"
@@ -396,7 +426,7 @@
   "platforms": [
    "Windows"
   ],
-  "cover_url": "https://cdn.cloudflare.steamstatic.com/steam/apps/611660/library_600x900.jpg"
+  "cover_url": "https://cdn.cloudflare.steamstatic.com/steam/apps/377160/library_600x900.jpg"
  },
  {
   "external_id": "22380",
@@ -507,7 +537,7 @@
   "external_id": "255710",
   "title": "Cities: Skylines",
   "synopsis": "Cities: Skylines é uma versão moderna dos simuladores de cidade clássicos. O jogo introduz novos elementos de jogabilidade para que você sinta a emoção e a dificuldade de criar e manter uma cidade de verdade, além de aprimorar os elementos clássicos da construção de cidades. ",
-  "release_date": "2015-04-10",
+  "release_date": "2015-03-10",
   "developer": "Colossal Order",
   "genres": [
    "Simulação",
@@ -706,7 +736,7 @@
   "external_id": "3240220",
   "title": "Grand Theft Auto V Enhanced",
   "synopsis": "Aproveite os fenômenos do entretenimento Grand Theft Auto V e Grand Theft Auto Online melhorados para uma nova geração, com gráficos deslumbrantes, tempos de carregamento mais rápidos, áudio 3D e mais, além de conteúdo exclusivo para jogadores do GTA Online.",
-  "release_date": "2025-04-04",
+  "release_date": "2025-03-04",
   "developer": "Rockstar North",
   "genres": [
    "Ação",
@@ -717,6 +747,24 @@
    "Windows"
   ],
   "cover_url": "https://cdn.cloudflare.steamstatic.com/steam/apps/3240220/library_600x900.jpg"
+ },
+ {
+  "external_id": "1551360",
+  "title": "Forza Horizon 5",
+  "synopsis": "Explore as paisagens vibrantes de mundo aberto do México com diversão e velocidade sem limites com os melhores carros do mundo.",
+  "release_date": "2021-11-08",
+  "developer": "Playground Games",
+  "genres": [
+   "Ação",
+   "Aventura",
+   "Corrida",
+   "Simulação",
+   "Esportes"
+  ],
+  "platforms": [
+   "Windows"
+  ],
+  "cover_url": "https://cdn.cloudflare.steamstatic.com/steam/apps/1551360/library_600x900.jpg"
  },
  {
   "external_id": "227300",
@@ -739,7 +787,7 @@
   "external_id": "394360",
   "title": "Hearts of Iron IV",
   "synopsis": "A vitória está ao alcance de seus dedos! Sua habilidade de liderar sua nação é sua arma suprema, o jogo de estratégia Hearts of Iron IV permite que você comande qualquer nação na Segunda Guerra Mundial, o conflito mais intenso da história do mundo.",
-  "release_date": "2016-09-06",
+  "release_date": "2016-06-06",
   "developer": "Paradox Development Studio",
   "genres": [
    "Simulação",
@@ -824,7 +872,7 @@
   "external_id": "2868840",
   "title": "Slay the Spire 2",
   "synopsis": "O icônico jogo de construção de baralhos roguelike está de volta. Crie baralhos únicos, encontre criaturas bizarras e descubra relíquias de imenso poder em Slay the Spire 2!",
-  "release_date": "2026-04-05",
+  "release_date": "2026-03-05",
   "developer": "Mega Crit",
   "genres": [
    "Indie",
@@ -920,18 +968,34 @@
   "cover_url": "https://cdn.cloudflare.steamstatic.com/steam/apps/1966720/library_600x900.jpg"
  },
  {
-  "external_id": "3168600",
-  "title": "Among Us 3D",
-  "synopsis": "O jogo de grupo com dedução social definitiva em três dimensões! Será que os tripulantes conseguem sobreviver ou os Impostores vão vencer? Funções, Reuniões de emergência, enganação, sabotagem e tarefas: curta o seu tipo favorito de caos do jogo original Among Us, mas com um toque 3D.",
-  "release_date": "2025-05-06",
-  "developer": "Schell Games",
+  "external_id": "945360",
+  "title": "Among Us",
+  "synopsis": "Um jogo de trabalho em equipe e trairagem online ou em rede local para 4 a 15 jogadores... no espaço!",
+  "release_date": "2018-11-16",
+  "developer": "Innersloth",
   "genres": [
    "Casual"
   ],
   "platforms": [
    "Windows"
   ],
-  "cover_url": "https://cdn.cloudflare.steamstatic.com/steam/apps/3168600/library_600x900.jpg"
+  "cover_url": "https://cdn.cloudflare.steamstatic.com/steam/apps/945360/library_600x900.jpg"
+ },
+ {
+  "external_id": "1172470",
+  "title": "Apex Legends™",
+  "synopsis": "Apex Legends é o premiado jogo de tiro em primeira pessoa de heróis e heroínas da Respawn Entertainment. Domine um elenco cada vez mais amplo de personagens lendários com habilidades poderosas, experimente partidas estratégicas e a jogabilidade inovadora na próxima evolução do gênero battle royale.",
+  "release_date": "2020-11-04",
+  "developer": "Respawn",
+  "genres": [
+   "Ação",
+   "Aventura",
+   "Gratuitos para Jogar"
+  ],
+  "platforms": [
+   "Windows"
+  ],
+  "cover_url": "https://cdn.cloudflare.steamstatic.com/steam/apps/1172470/library_600x900.jpg"
  },
  {
   "external_id": "440",
@@ -969,7 +1033,7 @@
   "external_id": "230410",
   "title": "Warframe",
   "synopsis": "Awaken as an unstoppable warrior and battle alongside your friends in this story-driven free-to-play online action game",
-  "release_date": "2013-04-25",
+  "release_date": "2013-03-25",
   "developer": "Digital Extremes",
   "genres": [
    "Ação",
@@ -1021,7 +1085,7 @@
   "external_id": "753640",
   "title": "Outer Wilds",
   "synopsis": "Ganhador do Jogo do Ano de 2019 pela Giant Bomb, Polygon, Eurogamer e The Guardian, Outer Wilds é um jogo de mistério de mundo aberto aclamado pela crítica que retrata um sistema solar fadado a um loop temporal perpétuo.",
-  "release_date": "2020-09-18",
+  "release_date": "2020-06-18",
   "developer": "Mobius Digital",
   "genres": [
    "Ação",
@@ -1086,7 +1150,7 @@
   "external_id": "1987080",
   "title": "Inside the Backrooms",
   "synopsis": "Inside the Backrooms is a horror multiplayer game mixed with different mechanics that will make you spend an intense night with friends. Explore, think, interact, but be careful, it is rumored that there are several entities wishing to find you...",
-  "release_date": "2022-09-20",
+  "release_date": "2022-06-20",
   "developer": "MrFatcat",
   "genres": [
    "Aventura",
@@ -1149,7 +1213,7 @@
   "external_id": "1057090",
   "title": "Ori and the Will of the Wisps",
   "synopsis": "Embarque em uma nova jornada em um mundo vasto e exótico, onde você encontrará inimigos gigantescos e quebra-cabeças desafiadores na sua missão para descobrir o destino de Ori.",
-  "release_date": "2020-04-10",
+  "release_date": "2020-03-10",
   "developer": "Moon Studios GmbH",
   "genres": [
    "Ação"
@@ -1163,7 +1227,7 @@
   "external_id": "261570",
   "title": "Ori and the Blind Forest",
   "synopsis": "\"Ori and the Blind Forest\" conta a história de um jovem órfão destinado a feitos heróicos através de um jogo de plataforma com um visual impressionante, criado pela Moon Studios para PC.",
-  "release_date": "2015-04-10",
+  "release_date": "2015-03-10",
   "developer": "Moon Studios GmbH",
   "genres": [
    "Ação"
@@ -1174,20 +1238,36 @@
   "cover_url": "https://cdn.cloudflare.steamstatic.com/steam/apps/261570/library_600x900.jpg"
  },
  {
-  "external_id": "581660",
-  "title": "Super Meat Boy Forever",
-  "synopsis": "Super Meat Boy is back! This time around Meat Boy is always running, literally it's an auto-runner. You will jump, dive, slide and punch your way through brutal levels and mean boss fights. We designed 5,000+ levels so you can play the game over and over without seeing the same level twice.",
-  "release_date": "2022-01-10",
+  "external_id": "40800",
+  "title": "Super Meat Boy",
+  "synopsis": "The infamous, tough-as-nails platformer comes to Steam with a playable Head Crab character (Steam-exclusive)!",
+  "release_date": "2010-11-30",
   "developer": "Team Meat",
   "genres": [
-   "Ação",
-   "Aventura",
    "Indie"
   ],
   "platforms": [
-   "Windows"
+   "Windows",
+   "macOS",
+   "Linux"
   ],
-  "cover_url": "https://cdn.cloudflare.steamstatic.com/steam/apps/581660/library_600x900.jpg"
+  "cover_url": "https://cdn.cloudflare.steamstatic.com/steam/apps/40800/library_600x900.jpg"
+ },
+ {
+  "external_id": "250900",
+  "title": "The Binding of Isaac: Rebirth",
+  "synopsis": "The Binding of Isaac: Rebirth is a randomly generated action RPG shooter with heavy Rogue-like elements. Following Isaac on his journey players will find bizarre treasures that change Isaac’s form giving him super human abilities and enabling him to fight off droves of mysterious creatures, discover secrets and fight his way to safety.",
+  "release_date": "2014-11-04",
+  "developer": "Nicalis, Inc.",
+  "genres": [
+   "Ação"
+  ],
+  "platforms": [
+   "Windows",
+   "macOS",
+   "Linux"
+  ],
+  "cover_url": "https://cdn.cloudflare.steamstatic.com/steam/apps/250900/library_600x900.jpg"
  },
  {
   "external_id": "418530",
@@ -1224,7 +1304,7 @@
   "external_id": "1172620",
   "title": "Sea of Thieves: 2026 Edition",
   "synopsis": "Sea of Thieves é um jogo de aventura pirata de sucesso, que oferece a experiência de pilhar tesouros perdidos, fazer parte de batalhas intensas, derrotar monstros marinhos e muito mais. Mergulhe nesta edição revisada do jogo, que inclui acesso a conteúdo digital bônus.",
-  "release_date": "2020-09-03",
+  "release_date": "2020-06-03",
   "developer": "Rare Ltd",
   "genres": [
    "Ação",
@@ -1255,7 +1335,7 @@
   "external_id": "397540",
   "title": "Borderlands 3",
   "synopsis": "O jogo de tiro e saque original voltou, trazendo milhares de armas e uma nova aventura movida a caos! Exploda novos inimigos em mundos inéditos como um dos quatro Caça-Arcas novos, com árvores de talentos, habilidades e personalização robustas.",
-  "release_date": "2020-04-13",
+  "release_date": "2020-03-13",
   "developer": "Gearbox Software",
   "genres": [
    "Ação",
@@ -1319,7 +1399,7 @@
   "external_id": "552520",
   "title": "Far Cry® 5",
   "synopsis": "Lute contra uma seita fanática neste jogo de tiro em primeira pessoa no mundo aberto. Participe de combate intenso, liberte territórios hostis, recrute seguidores leais e aliados animais para liberar Hope County sozinho ou no modo cooperativo para 2 jogadores.",
-  "release_date": "2018-04-26",
+  "release_date": "2018-03-26",
   "developer": "Ubisoft Montreal",
   "genres": [
    "Ação",
@@ -1350,7 +1430,7 @@
   "external_id": "8870",
   "title": "BioShock Infinite",
   "synopsis": "Indebted to the wrong people, with his life on the line, veteran of the U.S. Cavalry and now hired gun, Booker DeWitt has only one opportunity to wipe his slate clean. He must rescue Elizabeth, a mysterious girl imprisoned since childhood and locked up in the flying city of Columbia.",
-  "release_date": "2013-04-25",
+  "release_date": "2013-03-25",
   "developer": "Irrational Games",
   "genres": [
    "Ação"
@@ -1361,6 +1441,20 @@
    "Linux"
   ],
   "cover_url": "https://cdn.cloudflare.steamstatic.com/steam/apps/8870/library_600x900.jpg"
+ },
+ {
+  "external_id": "403640",
+  "title": "Dishonored 2",
+  "synopsis": "Assuma novamente o papel de um assassino sobrenatural em Dishonored 2. Declarado como “obra-prima” pelo Eurogamer e “um conto de vingança que não pode faltar” pelo Game Informer, Dishonored 2 é a sequência do sucesso de ação em 1ª pessoa da Arkane com mais de 100 prêmios de Jogo do Ano, Dishonored.",
+  "release_date": "2016-11-11",
+  "developer": "Arkane Studios",
+  "genres": [
+   "Ação"
+  ],
+  "platforms": [
+   "Windows"
+  ],
+  "cover_url": "https://cdn.cloudflare.steamstatic.com/steam/apps/403640/library_600x900.jpg"
  },
  {
   "external_id": "480490",
@@ -1398,7 +1492,7 @@
   "external_id": "208650",
   "title": "Batman™: Arkham Knight",
   "synopsis": "Batman™: Arkham Knight é a conclusão épica da trilogia Arkham da Rocksteady Studios. Desenvolvido exclusivamente para plataformas de última geração, Batman™: Arkham Knight apresenta o design exclusivo da Rocksteady para o Batmóvel.",
-  "release_date": "2015-09-23",
+  "release_date": "2015-06-23",
   "developer": "Rocksteady Studios",
   "genres": [
    "Ação",
@@ -1491,7 +1585,7 @@
   "external_id": "1888930",
   "title": "The Last of Us™ Part I",
   "synopsis": "Descubra o jogo premiado que inspirou a série de TV aclamada pela crítica. Desbrave a América pós-apocalíptica com Joel e Ellie e conheça aliados e inimigos inesquecíveis em The Last of Us™.",
-  "release_date": "2023-04-28",
+  "release_date": "2023-03-28",
   "developer": "Naughty Dog LLC",
   "genres": [
    "Ação",
@@ -1522,7 +1616,7 @@
   "external_id": "1623730",
   "title": "Palworld",
   "synopsis": "Este é um jogo completamente inovador de fabricação e sobrevivência em mundo aberto com suporte para vários jogadores. Nele você reúne criaturas fantásticas conhecidas como \"Pals\" em um vasto mundo e as usa em batalhas ou para trabalhos em construção, fazendas ou fábricas.",
-  "release_date": "2026-10-09",
+  "release_date": "2026-07-09",
   "developer": "Pocketpair",
   "genres": [
    "Ação",
@@ -1586,7 +1680,7 @@
   "external_id": "2138710",
   "title": "Sifu",
   "synopsis": "Sifu é um jogo de luta realista em terceira pessoa, trazendo combates de kung fu e golpes de artes marciais cinematográficos que conduzem você por uma trajetória de vingança.",
-  "release_date": "2023-04-28",
+  "release_date": "2023-03-28",
   "developer": "Sloclap",
   "genres": [
    "Ação",
@@ -1601,7 +1695,7 @@
   "external_id": "1868140",
   "title": "DAVE THE DIVER",
   "synopsis": "DAVE THE DIVER é um jogo solo de RPG e aventura casual de exploração das profundezas marinhas onde o jogador pode pescar durante o dia e administrar um restaurante de sushi à noite. Junte-se ao Dave e seus amigos peculiares na busca pelos segredos do misterioso Poço Azul.",
-  "release_date": "2023-09-28",
+  "release_date": "2023-06-28",
   "developer": "MINTROCKET",
   "genres": [
    "Aventura",
@@ -1651,7 +1745,7 @@
   "external_id": "553420",
   "title": "TUNIC",
   "synopsis": "Explore um reino repleto de lendas perdidas, antigos poderes e monstros ferozes em TUNIC, um jogo de ação isométrico com uma pequena raposa em uma grande aventura.",
-  "release_date": "2022-04-16",
+  "release_date": "2022-03-16",
   "developer": "TUNIC Team",
   "genres": [
    "Ação",
@@ -1683,7 +1777,7 @@
   "external_id": "1562430",
   "title": "DREDGE",
   "synopsis": "DREDGE é uma aventura de pescaria para um jogador com um toque sinistro. Venda seu pescado, melhore seu barco e escave as profundezas em busca de segredos antigos. Explore um arquipélago misterioso e descubra por que certas coisas deveriam ser esquecidas.",
-  "release_date": "2023-04-30",
+  "release_date": "2023-03-30",
   "developer": "Black Salt Games",
   "genres": [
    "Aventura",
@@ -1731,7 +1825,7 @@
   "external_id": "1332010",
   "title": "Stray",
   "synopsis": "Perdido, sozinho e separado da sua família, um gato de rua precisa desvendar um mistério ancestral para fugir de uma cibercidade esquecida e encontrar o caminho para casa.",
-  "release_date": "2022-10-19",
+  "release_date": "2022-07-19",
   "developer": "BlueTwelve Studio",
   "genres": [
    "Aventura",
@@ -1763,7 +1857,7 @@
   "external_id": "1426210",
   "title": "It Takes Two",
   "synopsis": "Embarque na jornada mais maluca da sua vida em It Takes Two. Convide um amigo ou amiga para se juntar de graça com o Passe de Amigo* e trabalhem juntos em uma variedade de desafios deliciosamente perturbadores.",
-  "release_date": "2021-04-25",
+  "release_date": "2021-03-25",
   "developer": "Hazelight Studios",
   "genres": [
    "Ação",
@@ -1796,7 +1890,7 @@
   "external_id": "477160",
   "title": "Human Fall Flat",
   "synopsis": "Human Fall Flat é um hilário jogo de plataforma com paisagens flutuantes onde você pode jogar sozinho ou online com até 8 pessoas. Novos níveis grátis mantêm nossa vibrante comunidade envolvida.",
-  "release_date": "2016-10-22",
+  "release_date": "2016-07-22",
   "developer": "No Brakes Games",
   "genres": [
    "Aventura",
@@ -1841,6 +1935,21 @@
   "cover_url": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/3219030/a5131aa4b84d04a55e3b9c561d7c886cc22bbe1c/header.jpg?t=1790942385"
  },
  {
+  "external_id": "2688950",
+  "title": "Planet Coaster 2",
+  "synopsis": "Construa e personalize montanhas-russas eletrizantes e toboáguas incríveis, gerencie a melhor experiência de parque temático e compartilhe suas criações épicas. O que acha de surfar nessa onda agora mesmo? ",
+  "release_date": "2024-11-06",
+  "developer": "Frontier Developments",
+  "genres": [
+   "Simulação",
+   "Estratégia"
+  ],
+  "platforms": [
+   "Windows"
+  ],
+  "cover_url": "https://cdn.cloudflare.steamstatic.com/steam/apps/2688950/library_600x900.jpg"
+ },
+ {
   "external_id": "535930",
   "title": "Two Point Hospital",
   "synopsis": "Design stunning hospitals, cure peculiar illnesses and manage troublesome staff as you spread your budding healthcare organisation across Two Point County.",
@@ -1872,6 +1981,54 @@
    "macOS"
   ],
   "cover_url": "https://cdn.cloudflare.steamstatic.com/steam/apps/1601580/library_600x900.jpg"
+ },
+ {
+  "external_id": "282070",
+  "title": "This War of Mine",
+  "synopsis": "Em \"This War of Mine\" você não irá jogar com um soldado de elite, mas sim com um grupo de civis tentando sobreviver em uma cidade sitiada, lutando contra a falta de alimentos, medicamentos e constante perigo de franco-atiradores e catadores hostis.",
+  "release_date": "2014-11-14",
+  "developer": "11 bit studios",
+  "genres": [
+   "Aventura",
+   "Indie",
+   "Simulação"
+  ],
+  "platforms": [
+   "Windows",
+   "Linux"
+  ],
+  "cover_url": "https://cdn.cloudflare.steamstatic.com/steam/apps/282070/library_600x900.jpg"
+ },
+ {
+  "external_id": "813780",
+  "title": "Age of Empires II: Definitive Edition",
+  "synopsis": "Age of Empires II: Definitive Edition apresenta \"Os Últimos Khans\", com 3 novas campanhas e 4 novas Civilizações. Atualizações frequentes incluem eventos, conteúdo adicional, novos modos de jogo e recursos aprimorados com a recente adição do modo Coop!",
+  "release_date": "2019-11-14",
+  "developer": "World's Edge",
+  "genres": [
+   "Estratégia"
+  ],
+  "platforms": [
+   "Windows",
+   "macOS"
+  ],
+  "cover_url": "https://cdn.cloudflare.steamstatic.com/steam/apps/813780/library_600x900.jpg"
+ },
+ {
+  "external_id": "1361210",
+  "title": "Warhammer 40,000: Darktide",
+  "synopsis": "Retome a cidade de Tertium das hordas de inimigos sanguinários neste intenso e brutal jogo de tiro. Warhammer 40.000: Darktide é a nova experiência em cooperação da equipe premiada por trás da série Vermintide. Com a queda de Tertium, chegou a hora dos proscritos.",
+  "release_date": "2022-11-30",
+  "developer": "Fatshark",
+  "genres": [
+   "Ação",
+   "Aventura",
+   "RPG"
+  ],
+  "platforms": [
+   "Windows"
+  ],
+  "cover_url": "https://cdn.cloudflare.steamstatic.com/steam/apps/1361210/library_600x900.jpg"
  },
  {
   "external_id": "261550",
@@ -1911,7 +2068,7 @@
   "external_id": "2054970",
   "title": "Dragon's Dogma 2",
   "synopsis": "Dragon’s Dogma 2 é um RPG de ação para um jogador movido por narrativa, que desafia os jogadores a escolherem sua própria experiência – desde a aparência de seus Nascen, suas vocações, seus aliados, seus comportamentos perante situações distintas e mais... em um mundo verdadeiramente imersivo.",
-  "release_date": "2024-04-21",
+  "release_date": "2024-03-21",
   "developer": "CAPCOM Co., Ltd.",
   "genres": [
    "Ação",
@@ -1958,7 +2115,7 @@
   "external_id": "648800",
   "title": "Raft",
   "synopsis": "Raft™ throws you and your friends into an epic oceanic adventure! Alone or together, players battle to survive a perilous voyage across a vast sea! Gather debris, scavenge reefs and build your own floating home, but be wary of the man-eating sharks!",
-  "release_date": "2022-09-20",
+  "release_date": "2022-06-20",
   "developer": "Redbeet Interactive",
   "genres": [
    "Aventura",
@@ -2027,7 +2184,7 @@
   "external_id": "546560",
   "title": "Half-Life: Alyx",
   "synopsis": "Half-Life: Alyx é a volta da Valve à série Half-Life em realidade virtual. Trata-se da história de uma impossível luta contra uma raça alienígena cruel, conhecida como Combine, situada entre os eventos de Half-Life e Half-Life 2.",
-  "release_date": "2020-04-23",
+  "release_date": "2020-03-23",
   "developer": "Valve",
   "genres": [
    "Ação",
@@ -2161,7 +2318,7 @@
   "external_id": "457140",
   "title": "Oxygen Not Included",
   "synopsis": "Oxygen Not Included is a space-colony simulation game. Deep inside an alien space rock your industrious crew will need to master science, overcome strange new lifeforms, and harness incredible space tech to survive, and possibly, thrive.",
-  "release_date": "2019-10-30",
+  "release_date": "2019-07-30",
   "developer": "Klei Entertainment",
   "genres": [
    "Indie",
@@ -2226,26 +2383,28 @@
   "cover_url": "https://cdn.cloudflare.steamstatic.com/steam/apps/617830/library_600x900.jpg"
  },
  {
-  "external_id": "3454910",
-  "title": "Metro Mini Market Simulator",
-  "synopsis": "Gerencie e faça crescer seu mini mercado na estação de metrô no Metro Mini Market Simulator! Expanda sua variedade de produtos e multiplique sua receita com decisões estratégicas. Torne-se um empreendedor de sucesso neste divertido mundo de simulação!",
-  "release_date": "2025-05-27",
-  "developer": "Altai Entertainment",
+  "external_id": "287980",
+  "title": "Mini Metro",
+  "synopsis": "Mini Metro é um jogo sobre projetar uma malha metroviária para uma cidade em crescimento. Desenhe linhas entre estações e comece a operar os trens. Mantenha a eficiência de suas rotas redesenhando-as à medida que novas estações são abertas. Decida onde usar seus recursos limitados.",
+  "release_date": "2015-11-06",
+  "developer": "Dinosaur Polo Club",
   "genres": [
-   "Casual",
    "Indie",
-   "Simulação"
+   "Simulação",
+   "Estratégia"
   ],
   "platforms": [
-   "Windows"
+   "Windows",
+   "macOS",
+   "Linux"
   ],
-  "cover_url": "https://cdn.cloudflare.steamstatic.com/steam/apps/3454910/library_600x900.jpg"
+  "cover_url": "https://cdn.cloudflare.steamstatic.com/steam/apps/287980/library_600x900.jpg"
  },
  {
   "external_id": "1927720",
   "title": "Monument Valley",
   "synopsis": "Embark on a journey of forgiveness through impossible environments and illusionary puzzles. Experience this meditative and calming puzzle game by manipulating monuments and creating evolving paths to explore new, surreal, and mysterious worlds.",
-  "release_date": "2022-10-12",
+  "release_date": "2022-07-12",
   "developer": "ustwo games",
   "genres": [
    "Aventura",
