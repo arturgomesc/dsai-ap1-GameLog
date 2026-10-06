@@ -57,6 +57,16 @@ def _jogo(appid):
     }
 
 
+def buscar(termo, limite=10):
+    """Candidatos para a tela do admin: só o básico, sem custo de um appdetails por item."""
+    itens = _get(f"storesearch/?term={quote(termo)}&cc=br&l=brazilian")["items"][:limite]
+    return [{"external_id": str(i["id"]), "title": i["name"], "cover_url": i.get("tiny_image")} for i in itens]
+
+
+def detalhe(external_id):
+    return _jogo(int(external_id))
+
+
 def listar(limite, termo=None):
     """Itens com falha viram {'erro': ...} para o importador contar, sem abortar (IMP-05)."""
     for appid in _ids(limite, termo):

@@ -2,6 +2,7 @@ from datetime import date
 
 from flask import Blueprint, abort, flash, redirect, render_template, request
 
+from .fontes import FONTES, importar_item
 from .models import AuditLog, Developer, Game, Genre, Platform, Report, Review, db, now
 from .util import admin_required, current_user, paginate, slugify
 
@@ -24,6 +25,40 @@ def index():
     return render_template(
         "admin/index.html", pending=Report.query.filter_by(status="pendente").count(), games=Game.query.count()
     )
+
+
+# ---------- importar jogos reais (IAD-01..09) ----------
+FONTE_ADMIN = "steam"  # ponytail: uma fonte fixa; escolher na tela quando houver mais de uma com buscar/detalhe
+
+
+@bp.route("/importar", methods=["GET", "POST"])
+def importar_jogos():
+    fonte = FONTES[FONTE_ADMIN]
+    q = (request.values.get("q") or "").strip()
+    if request.method == "POST":
+        try:
+            j = fonte.detalhe(request.form.get("external_id", ""))
+        except Exception:  # rede, JSON, id inválido: nada é criado
+            flash("A fonte não respondeu. Tente de novo em instantes.", "err")
+            return redirect(f"/admin/importar?q={q}")
+        status, game = importar_item(FONTE_ADMIN, j) if j else ("invalido", None)
+        if status == "ok":
+            audit("jogo.importar", f"{game.title} ({FONTE_ADMIN}:{game.external_id})")
+            db.session.commit()
+            flash(f"“{game.title}” importado.", "ok")
+            return redirect(f"/jogos/{game.slug}")
+        db.session.rollback()
+        flash(f"“{game.title}” já estava no catálogo." if status == "duplicado" else
+              "Esse item não é um jogo com título e data de lançamento válidos.", "err")
+        return redirect(f"/jogos/{game.slug}" if game else f"/admin/importar?q={q}")
+    resultados, erro = [], None
+    if len(q) >= 2:
+        try:
+            resultados = fonte.buscar(q, 10)
+        except Exception:
+            erro = "A fonte não respondeu. Tente de novo em instantes."
+    ja = {g.external_id for g in Game.query.filter_by(source=FONTE_ADMIN)}
+    return render_template("admin/importar.html", q=q, resultados=resultados, erro=erro, ja=ja)
 
 
 # ---------- jogos ----------

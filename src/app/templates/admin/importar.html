@@ -1,0 +1,19 @@
+{% extends "base.html" %}
+{% block title %}Importar jogos — Admin{% endblock %}
+{% block content %}
+<h1>Importar jogos da Steam</h1>
+<form method="get" class="panel"><label for="q">Nome do jogo</label>
+  <input id="q" name="q" value="{{ q }}" minlength="2" placeholder="Ex.: Hades, Celeste…" required>
+  <button>Buscar</button></form>
+{% if erro %}<p class="err">{{ erro }}</p>{% endif %}
+{% for r in resultados %}
+<div class="panel row">
+  {% if r.cover_url %}<img src="{{ r.cover_url }}" alt="Capa de {{ r.title }}" style="flex:0 0 120px;max-width:120px">{% endif %}
+  <div style="flex:3"><strong>{{ r.title }}</strong>
+    {% if r.external_id in ja %}<p class="mut">No catálogo</p>
+    {% else %}<form method="post"><input type="hidden" name="csrf_token" value="{{ csrf_token() }}">
+      <input type="hidden" name="q" value="{{ q }}"><input type="hidden" name="external_id" value="{{ r.external_id }}">
+      <button>Importar</button></form>{% endif %}</div>
+</div>
+{% else %}{% if q and not erro %}<p class="mut">Nenhum resultado para “{{ q }}”.</p>{% endif %}{% endfor %}
+{% endblock %}
