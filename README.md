@@ -19,12 +19,12 @@ python -m venv .venv && . .venv/bin/activate
 pip install -r requirements.txt
 cd src
 export ADMIN_EMAIL=admin@example.com ADMIN_PASSWORD=<senha>   # ver .env.example
-flask --app app seed        # 139 jogos reais (snapshot da Steam), 30 usuários fictícios com avaliações em ~30 jogos (senha: senha1234)
+flask --app app seed        # 149 jogos reais (snapshot da Steam), 30 usuários fictícios com avaliações em ~30 jogos (senha: senha1234)
 flask --app app run
-cd .. && pytest             # 154 testes, um ou mais por critério de aceitação
+cd .. && pytest             # 166 testes, um ou mais por critério de aceitação
 ```
 
-O catálogo vem de `src/app/dados/jogos.json` (gerado com `flask --app app export-games --termos "Nome 1;Nome 2" --saida src/app/dados/jogos.json`). Pelo painel, o admin busca e importa jogos em `/admin/importar`. Pela linha de comando: `flask --app app import-games [--fonte steam] [--limite 40] [--termo nome]` (API pública da Steam, sem chave). Para somar outra fonte (RAWG, IGDB), crie `src/app/fontes/<nome>.py` com `listar(limite, termo)` e registre em `FONTES`. Em banco local antigo, rode `./dev.sh reset` (o Game ganhou colunas).
+O catálogo vem de `src/app/dados/jogos.json` (gerado com `flask --app app export-games --termos "Nome 1;Nome 2" --saida src/app/dados/jogos.json`). API pública somente leitura em `/api` (jogos, detalhe e avaliações, em JSON). Pelo painel, o admin busca e importa jogos em `/admin/importar`. Pela linha de comando: `flask --app app import-games [--fonte steam] [--limite 40] [--termo nome]` (API pública da Steam, sem chave). Para somar outra fonte (RAWG, IGDB), crie `src/app/fontes/<nome>.py` com `listar(limite, termo)` e registre em `FONTES`. Em banco local antigo, rode `./dev.sh reset` (o Game ganhou colunas).
 
 Deploy: `render.yaml` (Render, plano gratuito; o seed reproduzível recria o banco a cada start).
 Variáveis: `SECRET_KEY` (gerada), `ADMIN_EMAIL`, `ADMIN_PASSWORD`.
@@ -43,6 +43,7 @@ Variáveis: `SECRET_KEY` (gerada), `ADMIN_EMAIL`, `ADMIN_PASSWORD`.
 | recomendacoes (REC-01..09) | `recomendacoes.py` | `tests/test_recomendacoes.py` |
 | painel-admin (ADM-01..10) | `admin.py` | `tests/test_admin.py` |
 | importacao-steam (IMP-01..09) | `fontes/`, `cli.py` | `tests/test_importacao.py` |
+| api-json (API-01..10) | `api.py` | `tests/test_api.py` |
 | capas-verticais (CAP-01..05) | `fontes/steam.py`, `dados/jogos.json` | `tests/test_capas.py` |
 | recomendacoes-colaborativas (COL-01..08) | `recomendacoes.py` | `tests/test_recomendacoes_colab.py` |
 | comparar-gosto (AFI-01..10) | `afinidade.py`, `templates/afinidade/` | `tests/test_afinidade.py` |
@@ -55,14 +56,14 @@ Variáveis: `SECRET_KEY` (gerada), `ADMIN_EMAIL`, `ADMIN_PASSWORD`.
 ```
 $ cloc . --vcs=git --exclude-dir=node_modules,vendor,dist,build,prompts --exclude-lang=Markdown,JSON,YAML,CSV,Text,SVG --not-match-f='(lock|\.min\.)'
 Language        files   blank   comment   code
-Python           38     788        53   3198
+Python           40     847        55   3435
 HTML             26       5         0    571
 CSS               1       0         0     42
 Bourne Shell      1       1         2     13
 INI               1       0         0      3
-SUM:             67     794        55   3827
+SUM:             69     853        57   4064
 ```
 
-**Nota sobre a meta de 100 mil linhas:** o escopo das 17 specs (≈150 critérios de aceitação) resulta em ~3 mil linhas de
+**Nota sobre a meta de 100 mil linhas:** o escopo das 18 specs (≈160 critérios de aceitação) resulta em ~3 mil linhas de
 código real. Preferimos entregar a aplicação completa e testada a inflar o número com código duplicado ou gerado;
 o valor medido está reportado acima sem ajuste.
