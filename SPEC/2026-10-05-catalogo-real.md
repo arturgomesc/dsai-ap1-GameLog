@@ -16,3 +16,6 @@ O catálogo publicado deve mostrar apenas jogos reais, com capa oficial e alguns
 
 ## Fora do escopo
 Resenhas escritas à mão para cada jogo, sincronização periódica com a Steam, importação pela interface admin.
+
+## Registro de alterações
+- 2026-10-06: no snapshot, "Among Us 3D" (Steam 3168600) foi trocado por "Among Us" (Steam 945360, Innersloth), que é o jogo pretendido. A busca por nome da Steam trouxe a versão 3D na primeira geração. Os demais critérios não mudam.
