@@ -18,6 +18,9 @@
     {% else %}<a class="btn" href="/entrar?next=/u/{{ u.username }}">Seguir</a>{% endif %}
   </div>
   {% if u.bio %}<p>{{ u.bio }}</p>{% endif %}
+  {% if afin %}<p>{% if afin[0] is not none %}Afinidade com você: <strong>{{ afin[0] }}%</strong> <span class="mut">({{ afin[1] }} jogos em comum)</span>
+    {% else %}<span class="mut">Afinidade: dados insuficientes ({{ afin[1] }} jogos em comum)</span>{% endif %}
+    · <a href="/u/{{ u.username }}/comparar">Comparar gostos</a></p>{% endif %}
   <p>
     <strong>{{ stats.avaliacoes }}</strong> avaliações ·
     <strong>{{ stats.listas }}</strong> listas ·

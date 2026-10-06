@@ -104,9 +104,9 @@ def _atividade(rng, games, real):
         db.session.add_all([r, Status(user_id=u.id, game_id=g.id, value="jogado", updated_at=at),
                             Activity(user_id=u.id, kind="avaliou", game_id=g.id, created_at=at, review=r)])
 
-    if real:  # só alguns jogos recebem avaliações, 3 a 9 cada (CRE-06)
+    if real:  # só alguns jogos recebem avaliações, 8 a 20 cada, para haver jogos em comum entre usuários (CRE-06)
         for g in rng.sample(games, min(DESTAQUES, len(games))):
-            for u in rng.sample(users, rng.randint(3, 9)):
+            for u in rng.sample(users, rng.randint(8, 20)):
                 avaliar(u, g)
     for u in users:
         for g in [] if real else rng.sample(games, rng.randint(8, 25)):

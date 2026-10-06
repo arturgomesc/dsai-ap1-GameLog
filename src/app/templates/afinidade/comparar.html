@@ -1,0 +1,28 @@
+{% extends "base.html" %}
+{% block title %}Você e @{{ outro.username }} — GameLog{% endblock %}
+{% block content %}
+<h1>Você e <a href="/u/{{ outro.username }}">@{{ outro.username }}</a></h1>
+<section class="panel">
+  {% if pct is not none %}<p style="font-size:2rem;margin:0"><strong>{{ pct }}%</strong> de afinidade</p>
+  {% else %}<p style="margin:0"><strong>Dados insuficientes</strong> para calcular a afinidade.</p>{% endif %}
+  <p class="mut">{{ qtd }} {{ 'jogo' if qtd == 1 else 'jogos' }} em comum (mínimo de 3). A afinidade vem da diferença média entre as notas de vocês.</p>
+</section>
+<div class="row">
+  <section class="panel"><h2>Concordam</h2>
+    {% for g, a, b, d in concordam %}<p><a href="/jogos/{{ g.slug }}">{{ g.title }}</a> <span class="mut">· você {{ a }} · @{{ outro.username }} {{ b }}</span></p>
+    {% else %}<p class="mut">Nenhum jogo com notas parecidas.</p>{% endfor %}
+  </section>
+  <section class="panel"><h2>Divergem</h2>
+    {% for g, a, b, d in divergem %}<p><a href="/jogos/{{ g.slug }}">{{ g.title }}</a> <span class="mut">· você {{ a }} · @{{ outro.username }} {{ b }}</span></p>
+    {% else %}<p class="mut">Nenhum jogo com notas muito diferentes.</p>{% endfor %}
+  </section>
+</div>
+<section class="panel"><h2>Indicações de @{{ outro.username }}</h2>
+  {% for r in indicacoes %}<p><a href="/jogos/{{ r.game.slug }}">{{ r.game.title }}</a> <span class="mut">· nota {{ r.score }}/10</span></p>
+  {% else %}<p class="mut">Nada novo para indicar: você já conhece os jogos que essa pessoa mais curtiu.</p>{% endfor %}
+</section>
+{% if linhas %}<section class="panel"><h2>Jogos em comum</h2>
+  <table><tr><th>Jogo</th><th>Você</th><th>@{{ outro.username }}</th><th>Diferença</th></tr>
+  {% for g, a, b, d in linhas %}<tr><td><a href="/jogos/{{ g.slug }}">{{ g.title }}</a></td><td>{{ a }}</td><td>{{ b }}</td><td>{{ d }}</td></tr>{% endfor %}</table>
+</section>{% endif %}
+{% endblock %}

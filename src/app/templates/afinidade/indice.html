@@ -1,0 +1,11 @@
+{% extends "base.html" %}
+{% from "_macros.html" import avatar %}
+{% block title %}Comparar gostos — GameLog{% endblock %}
+{% block content %}
+<h1>Afinidade com quem você segue</h1>
+{% for u, pct, comuns in linhas %}<div class="panel">{{ avatar(u) }} <a href="/u/{{ u.username }}/comparar">{{ u.display_name }}</a>
+  <span class="mut">@{{ u.username }}</span> ·
+  {% if pct is not none %}<strong>{{ pct }}%</strong>{% else %}<span class="mut">dados insuficientes</span>{% endif %}
+  <span class="mut">· {{ comuns }} {{ 'jogo' if comuns == 1 else 'jogos' }} em comum</span></div>
+{% else %}<p class="mut">Você ainda não segue ninguém. Siga pessoas para comparar gostos.</p>{% endfor %}
+{% endblock %}

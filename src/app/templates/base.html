@@ -22,6 +22,7 @@
       <a href="/meus-jogos">Meus jogos</a>
       <a href="/listas">Listas</a>
       <a href="/recomendacoes">Para você</a>
+      <a href="/comparar">Comparar</a>
       {% if me.is_admin %}<a href="/admin">Admin</a>{% endif %}
       <a href="/u/{{ me.username }}">@{{ me.username }}</a>
       <form method="post" action="/sair" class="inline"><input type="hidden" name="csrf_token" value="{{ csrf_token() }}"><button class="link">Sair</button></form>

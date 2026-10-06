@@ -1,6 +1,6 @@
 import importlib
 
-MODULES = ["auth", "catalogo", "busca", "jogo", "avaliacoes", "listas", "social", "recomendacoes", "admin"]
+MODULES = ["auth", "catalogo", "busca", "jogo", "avaliacoes", "listas", "social", "recomendacoes", "afinidade", "admin"]
 
 
 def register(app):

@@ -5,6 +5,7 @@ from flask import Blueprint, abort, flash, redirect, render_template, request, s
 from werkzeug.security import check_password_hash, generate_password_hash
 
 from .models import Activity, Follow, GameList, LoginAttempt, Review, User, db, now
+from .afinidade import resumo_com
 from .perfil import dados as dados_perfil
 from .util import current_user, login_required, safe_next
 
@@ -106,8 +107,9 @@ def profile(username):
         "seguindo": Follow.query.filter_by(follower_id=user.id).count(),
     }
     following = bool(me and not own and Follow.query.filter_by(follower_id=me.id, followed_id=user.id).first())
+    afin = resumo_com(me.id, user.id) if me and not own else None  # AFI-08
     return render_template(
-        "auth/perfil.html", u=user, own=own, stats=stats, following=following, lists=lists.limit(10).all(),
+        "auth/perfil.html", u=user, own=own, stats=stats, following=following, lists=lists.limit(10).all(), afin=afin,
         **extra,
     )
 
